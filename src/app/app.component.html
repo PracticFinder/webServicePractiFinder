@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" style="font-family: 'Poppins', sans-serif;">
+<mat-toolbar *ngIf="!mostrarToolbar" color="primary" style="font-family: 'Poppins', sans-serif;">
   <h1 style="padding-right: 20px;"><b>PRACTIFINDER</b></h1>
   <a mat-button *ngFor="let option of options"
      [routerLink]="option.path" style="text-decoration: none;">{{option.title}}</a>
@@ -6,4 +6,8 @@
   <a mat-button *ngFor="let option of boottons"
      [routerLink]="option.path"><mat-icon style="font-size: 120%;">{{option.title}}</mat-icon></a>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<app-navbar *ngIf="mostrarToolbar" ></app-navbar>
+
+<div class="background-container">
+  <router-outlet></router-outlet>
+</div>

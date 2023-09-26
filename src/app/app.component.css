@@ -1,2 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mat-toolbar {
+  background: linear-gradient(to right, #864DDF, #203376); /* Cambia los colores según tus preferencias */
+}
+
+.background-container {
+  background: linear-gradient(to right, #864DDF, #203376);
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  top: auto;
+}
 
 
