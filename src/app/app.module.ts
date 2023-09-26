@@ -12,12 +12,13 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { MisPostulacionesComponent } from './components/mis-postulaciones/mis-postulaciones.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { NotificacionesComponent } from './components/notificaciones/notificaciones.component';
-import { PerfilComponent } from './components/perfil/perfil.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import {RouterOutlet} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
 import {FormsModule} from "@angular/forms";
+import {ProfileComponent} from "./components/Profile/profile.component";
+import {TableProfileContentComponent} from "./components/Profile/table-profile-content/table-profile-content.component";
 
 @NgModule({
   declarations: [
@@ -26,8 +27,9 @@ import {FormsModule} from "@angular/forms";
     MisPostulacionesComponent,
     SoporteComponent,
     NotificacionesComponent,
-    PerfilComponent,
-    ChatBoxComponent
+    ChatBoxComponent,
+    ProfileComponent,
+    TableProfileContentComponent
   ],
   imports: [
     AppRoutingModule,
