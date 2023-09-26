@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .login-card{
+    width: 50vh;
+    height: 50vh;
+    margin:auto;
+    margin-top: 10%;
+  }
+
+  .login-form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+  }

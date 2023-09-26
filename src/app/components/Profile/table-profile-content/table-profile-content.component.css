@@ -1,0 +1,42 @@
+
+  .information_table{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 30px;
+    padding: 4px;
+
+  }
+
+  .btn-custom {
+    background-color: #FEB543; /* Color de fondo personalizado */
+    color: #ffffff; /* Color de texto personalizado */
+    padding: 15px  30px; /* Espaciado del botón */
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .btn-custom:hover {
+    background-color: #3b82f6; /* Color de fondo personalizado en hover */
+  }
+
+  .cd-custom{
+    background-color: black;
+    color: white;
+    height: 100%;
+  }
+
+  .cv-button {
+    background-color: #864DDF; /* Color de fondo púrpura (#864DDF) */
+    color: #fff; /* Color de texto blanco */
+    padding: 0.75rem 1.5rem; /* Ajusta el tamaño del botón según tus preferencias */
+    border-radius: 0.5rem; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Establecer el color de fondo cuando se pasa el cursor */
+  .cv-button:hover {
+    background-color: #6A42DC; /* Cambia el color de fondo al pasar el cursor (#6A42DC) */
+  }
