@@ -6,7 +6,8 @@ import {MisPostulacionesComponent} from "../components/mis-postulaciones/mis-pos
 import {SoporteComponent} from "../components/soporte/soporte.component";
 import {NotificacionesComponent} from "../components/notificaciones/notificaciones.component";
 import {ChatBoxComponent} from "../components/chat-box/chat-box.component";
-import {PerfilComponent} from "../components/perfil/perfil.component";
+import {ProfileContentComponent} from "../components/Profile/profile-content/profile-content.component";
+import {ProfileComponent} from "../components/Profile/profile.component";
 
 
 const routes: Routes =[
@@ -15,15 +16,18 @@ const routes: Routes =[
   {path: 'soporte', component: SoporteComponent},
   {path: 'notificaciones', component: NotificacionesComponent},
   {path: 'messages', component: ChatBoxComponent},
-  {path: 'perfil', component: PerfilComponent},
+  {path: 'perfil', component: ProfileComponent},
   {path: '', redirectTo: 'inicio', pathMatch: 'full'},
   {path: '**', component: InicioComponent},
 ]
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
-  exports:[RouterModule]
+    imports: [
+        RouterModule.forRoot(routes)
+    ],
+    declarations: [
+        ProfileContentComponent
+    ],
+    exports: [RouterModule, ProfileContentComponent]
 })
 export class AppRoutingModule { }
