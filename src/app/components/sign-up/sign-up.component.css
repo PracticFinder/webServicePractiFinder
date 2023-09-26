@@ -1,0 +1,21 @@
+.SingUp-card{
+  width: 50vh;
+  height: 85vh;
+  margin:auto;
+  margin-top: 1%;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(248, 255, 59, 0.698);  }
+
+.SingUp-form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: auto;
+}
+
+.boton{
+  background-color:black;
+}
