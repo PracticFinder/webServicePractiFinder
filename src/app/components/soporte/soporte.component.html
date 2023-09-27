@@ -1,1 +1,25 @@
-<p>soporte works!</p>
+<ng-container class="container">
+  <h1 class="title">{{title}}</h1>
+  <mat-grid-list cols="4">
+    <mat-grid-tile *ngFor="let preguntaRespuesta of preguntasRespuestas" [colspan]="preguntaRespuesta.cols" [rowspan]="preguntaRespuesta.rows">
+      <mat-card class="card">
+        <mat-card-header>
+          <mat-card-title>
+            <h3 class="question-postulacion">{{preguntaRespuesta.question}}</h3>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="answer-postulacion">{{preguntaRespuesta.answer}}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div class="contact-section">
+    <h1 class="title2">{{title2}}</h1>
+    <mat-list class="contacs-list" role="list">
+      <mat-list-item class="title2" role="listitem">Correo: {{email}}</mat-list-item>
+      <mat-list-item class="title2" role="listitem">Telefono: {{phone}}</mat-list-item>
+    </mat-list>
+  </div>
+
+</ng-container>
