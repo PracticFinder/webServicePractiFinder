@@ -27,6 +27,8 @@ import { RememberPasswordComponent } from './components/remember-password/rememb
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {ToolbarService} from "./services/toolbar.service";
 import {LocalToolbarServiceService} from "./services/local-toolbar-service.service";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import {LocalToolbarServiceService} from "./services/local-toolbar-service.servi
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatGridListModule,
+    MatListModule,
   ],
   providers: [ToolbarService, LocalToolbarServiceService],
   bootstrap: [AppComponent]

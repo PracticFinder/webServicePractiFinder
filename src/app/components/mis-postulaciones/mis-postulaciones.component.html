@@ -1,1 +1,22 @@
-<p>mis-postulaciones works!</p>
+<ng-container class="container">
+  <h1 class="title">{{title}}</h1>
+  <mat-grid-list cols="4">
+    <mat-grid-tile *ngFor="let postulacion of postulaciones" [colspan]="postulacion.cols" [rowspan]="postulacion.rows">
+      <mat-card class="card">
+        <mat-card-header>
+          <mat-card-title>
+            <div class="avatar-title-row">
+              <div class="image-card">
+                <img mat-card-avatar class="avatar-postulacion" src="{{postulacion.image}}" alt="{{postulacion.title}}" >
+              </div>
+              <h3 class="title-postulacion">{{postulacion.title}}</h3>
+            </div>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="date-postulacion">{{postulacion.date}}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-container>
