@@ -1,1 +1,41 @@
-<p>chat-box works!</p>
+<div class="chatbox-container">
+  <div class="chat-sidebar">
+    <!-- Lista de chats o conversaciones recientes -->
+    <div class="chat-list">
+      <!-- Aquí puedes iterar sobre las conversaciones recientes -->
+      <!-- Ejemplo de conversación reciente -->
+      <div class="chat-item">
+        <div class="chat-item-avatar">
+          <!-- Coloca la imagen del perfil del otro usuario aquí -->
+        </div>
+        <div class="chat-item-details">
+          <div class="chat-item-name">Nombre del Usuario</div>
+          <div class="chat-item-last-message">Último mensaje de la conversación</div>
+        </div>
+      </div>
+      <!-- Fin del ejemplo de conversación reciente -->
+    </div>
+  </div>
+  <div class="chat-content">
+    <!-- Encabezado de la conversación actual -->
+    <div class="chat-header">
+      <!-- Coloca la imagen del perfil del otro usuario aquí -->
+      <div class="chat-header-details">
+        <div class="chat-header-name">Nombre del Usuario</div>
+        <div class="chat-header-status">En línea</div>
+      </div>
+    </div>
+    <!-- Mensajes de la conversación actual -->
+    <div class="message-container" *ngFor="let message of messages">
+      <div class="message" [ngClass]="{'user-message': message.isUser}">
+        {{ message.text }}
+      </div>
+    </div>
+    <!-- Área de entrada de texto para enviar mensajes -->
+    <div class="input-container">
+      <input type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" placeholder="Escribe un mensaje..." />
+      <button (click)="sendMessage()">Enviar</button>
+    </div>
+  </div>
+</div>
+

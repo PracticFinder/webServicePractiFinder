@@ -1,0 +1,137 @@
+/* chatbox.component.css */
+
+/* Estilos para el contenedor principal del chatbox */
+.chatbox-container {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+/* Estilos para la barra lateral de chats */
+.chat-sidebar {
+  width: 25%;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Estilos para la lista de conversaciones recientes */
+.chat-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para los elementos de la lista de conversaciones recientes */
+.chat-item {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.chat-item-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+  /* Puedes establecer una imagen de perfil como fondo aquí */
+}
+
+.chat-item-details {
+  flex: 1;
+}
+
+.chat-item-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.chat-item-last-message {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Estilos para el área de conversación actual */
+.chat-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para el encabezado de la conversación actual */
+.chat-header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.chat-header-details {
+  flex: 1;
+}
+
+.chat-header-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.chat-header-status {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Estilos para el área de mensajes */
+.message-container {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Estilos para el área de entrada de texto */
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.input-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
