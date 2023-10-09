@@ -6,7 +6,6 @@
   width: 1000px;
   background-color: #FEB543;
   color: white;
-  ::placeholder { color: white; };
 }
 
 .card-container {

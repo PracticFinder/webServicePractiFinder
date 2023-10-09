@@ -12,12 +12,21 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { MisPostulacionesComponent } from './components/mis-postulaciones/mis-postulaciones.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { NotificacionesComponent } from './components/notificaciones/notificaciones.component';
-import { PerfilComponent } from './components/perfil/perfil.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import {RouterOutlet} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
 import {FormsModule} from "@angular/forms";
+import {ProfileComponent} from "./components/Profile/profile.component";
+import {TableProfileContentComponent} from "./components/Profile/table-profile-content/table-profile-content.component";
+import {LoginComponent} from "./components/login/login.component";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { RememberPasswordComponent } from './components/remember-password/remember-password.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {ToolbarService} from "./services/toolbar.service";
+import {LocalToolbarServiceService} from "./services/local-toolbar-service.service";
 
 @NgModule({
   declarations: [
@@ -26,8 +35,13 @@ import {FormsModule} from "@angular/forms";
     MisPostulacionesComponent,
     SoporteComponent,
     NotificacionesComponent,
-    PerfilComponent,
-    ChatBoxComponent
+    ChatBoxComponent,
+    ProfileComponent,
+    TableProfileContentComponent,
+    LoginComponent,
+    SignUpComponent,
+    RememberPasswordComponent,
+    NavbarComponent
   ],
   imports: [
     AppRoutingModule,
@@ -40,9 +54,11 @@ import {FormsModule} from "@angular/forms";
     MatIconModule,
     RouterOutlet,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
-  providers: [],
+  providers: [ToolbarService, LocalToolbarServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
