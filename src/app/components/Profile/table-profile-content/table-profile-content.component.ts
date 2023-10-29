@@ -1,4 +1,5 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {UserService} from "../../../services/user.service";
 
 @Component({
   selector: 'app-table-profile-content',
@@ -7,59 +8,61 @@ import {Component, Input} from '@angular/core';
 })
 export class TableProfileContentComponent {
   @Input() usuario: any;
-  mostrarInfoPersonal = true;
-  mostrarConocimientoYAptitud = false;
-  mostrarCursos = false;
-  mostrarExperienciaLaboral = false;
-  mostrarIdiomas = false;
-  longtable=false;
+  @Output() ejecutarFuncion = new EventEmitter<string>();
 
-  showInformacionPersonal() {
-    this.mostrarInfoPersonal = true;
-    this.mostrarConocimientoYAptitud = false;
-    this.mostrarCursos = false;
-    this.mostrarExperienciaLaboral = false;
-    this.mostrarIdiomas = false;
-    this.longtable=false;
+  ejecutarFuncionExterna(parametro: string) {
+    this.ejecutarFuncion.emit(parametro);
+  }
+  showInfo: {
+    personal: boolean,
+    skills: boolean,
+    courses: boolean,
+    experience: boolean,
+    languages: boolean
+  };
+
+  longtable: boolean;
+
+  constructor(private usuarioService: UserService) {
+    this.showInfo = {
+      personal: true,
+      skills: false,
+      courses: false,
+      experience: false,
+      languages: false
+    };
+    this.longtable = false;
+  }
+  ngOnInit(): void {
+    this.usuarioService.getUsuario().subscribe((data: any) => {
+      this.usuario = data;
+    });
   }
 
-  showConocimientosYAptitudes() {
-    this.mostrarInfoPersonal = false;
-    this.mostrarConocimientoYAptitud = true  ;
-    this.mostrarCursos = false;
-    this.mostrarExperienciaLaboral = false;
-    this.mostrarIdiomas = false;
-    this.longtable=false;
-
+  // Función para actualizar el usuario
+  actualizarUsuario(updatedInfo: any): void {
+    this.usuarioService.updateUsuario(updatedInfo).subscribe((data: any) => {
+    });
   }
 
+  showInformation(section: string) {
+    this.showInfo = {
+      personal: section === 'personal',
+      skills: section === 'skills',
+      courses: section === 'courses',
+      experience: section === 'experience',
+      languages: section === 'languages'
+    };
 
-  showCursos() {
-    this.mostrarInfoPersonal = false;
-    this.mostrarConocimientoYAptitud = false;
-    this.mostrarCursos = true;
-    this.mostrarExperienciaLaboral = false;
-    this.mostrarIdiomas = false;
-    this.longtable=false;
-
+    this.longtable = section === 'experience';
   }
 
-  showExperienciaLaboral() {
-    this.mostrarInfoPersonal = false;
-    this.mostrarConocimientoYAptitud = false;
-    this.mostrarCursos = false;
-    this.mostrarExperienciaLaboral = true;
-    this.mostrarIdiomas = false;
-    this.longtable=true;
+  editarHabilidadTecnica(habilidad: string) {
+    // Lógica para editar la habilidad técnica
   }
 
-  showIdiomas() {
-    this.mostrarInfoPersonal = false;
-    this.mostrarConocimientoYAptitud = false;
-    this.mostrarCursos = false;
-    this.mostrarExperienciaLaboral = false;
-    this.mostrarIdiomas = true;
-    this.longtable=false;
-
+  agregarHabilidadTecnica() {
+    // Lógica para agregar una nueva habilidad técnica
+    // Podría mostrar un cuadro de diálogo o un formulario para que el usuario ingrese la nueva habilidad técnica
   }
 }
