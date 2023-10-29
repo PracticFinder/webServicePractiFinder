@@ -1,12 +1,17 @@
+.button-list {
+  list-style: none;
+  padding: 1px;
+}
 
-  .information_table{
+.information_table{
     display: flex;
     flex-direction: row;
     background-color: white;
     margin: 30px;
     padding: 4px;
+    background: linear-gradient(to right, #864DDF, #203376);
 
-  }
+}
 
   .btn-custom {
     background-color: #FEB543; /* Color de fondo personalizado */
@@ -17,18 +22,19 @@
   }
 
   .btn-custom:hover {
-    background-color: #3b82f6; /* Color de fondo personalizado en hover */
+    background-color: #3B82F6; /* Nuevo color de fondo en hover */
   }
 
   .cd-custom{
-    background-color: black;
-    color: white;
+    background-color: #1F2937; /* Nuevo color de fondo para las tarjetas */
+    color: #FFFFFF; /* Nuevo color de texto en las tarjetas */
     height: 100%;
   }
 
   .cv-button {
     background-color: #864DDF; /* Color de fondo púrpura (#864DDF) */
     color: #fff; /* Color de texto blanco */
+
     padding: 0.75rem 1.5rem; /* Ajusta el tamaño del botón según tus preferencias */
     border-radius: 0.5rem; /* Borde redondeado */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
@@ -40,3 +46,11 @@
   .cv-button:hover {
     background-color: #6A42DC; /* Cambia el color de fondo al pasar el cursor (#6A42DC) */
   }
+
+input[type="text"] {
+  background-color: #1F2937; /* Color de fondo del input para que combine con las tarjetas */
+  color: #FFFFFF; /* Color del texto del input */
+  padding: 10px; /* Espaciado del input */
+  border: 1px solid #FEB543; /* Borde del input */
+  border-radius: 5px; /* Borde redondeado del input */
+}

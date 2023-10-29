@@ -1,0 +1,62 @@
+{
+  "usuario": {
+    "nombre": "asd",
+    "imagen": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
+    "edad": "asd",
+    "telefono": "+51 921 123 123",
+    "direccion": "asddddddd",
+    "habilidades": {
+      "tecnicas": [
+        "Habilidad 1",
+        "Habilidad 2",
+        "Habilidad 3"
+      ],
+      "interpersonales": [
+        "Habilidad 1",
+        "Habilidad 2",
+        "Habilidad 3"
+      ],
+      "certificaciones": [
+        "Certificación 1",
+        "Certificación 2",
+        "Certificación 3"
+      ]
+    },
+    "curso": [
+      "Curso 1",
+      "Curso 2",
+      "Curso 3"
+    ],
+    "experiencias": [
+      {
+        "empresa": "Empresa 1",
+        "cargo": "Ingeniero",
+        "fechaInicio": "20 de Octubre 2023",
+        "fechaFinalizacion": "10 de Diciembre 2023",
+        "descripcion": "Mantenimiento como ingeniero"
+      },
+      {
+        "empresa": "Empresa 2",
+        "cargo": "Ingeniero",
+        "fechaInicio": "10 de Abril 2022",
+        "fechaFinalizacion": "30 de Noviembre 2023",
+        "descripcion": "Mantenimiento de software"
+      }
+    ],
+    "idiomas": [
+      {
+        "nivel": "Avanzado",
+        "idioma": "Ingles"
+      },
+      {
+        "nivel": "Nativo",
+        "idioma": "Español"
+      },
+      {
+        "nivel": "Intermedio",
+        "idioma": "Italiano"
+      }
+    ],
+    "correo": "enzotrujilloacosta@gmail.com"
+  }
+}
