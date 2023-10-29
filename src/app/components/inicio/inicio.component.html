@@ -1,36 +1,66 @@
-<div style="font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center; margin-top: 70px;">
-  <span>
-    <input class="filtrado p-inputtext" [(ngModel)]="filters.global.value" placeholder="INGRESE SU BUSQUEDA..."/>
-  </span>
+<div style="font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center; margin-top: 40px;">
+
+  <input class="filtrado p-inputtext" [(ngModel)]="filters.global.value" placeholder="{{filters.search}}"/>
+
 </div>
 
-<div class="button-container" style="font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center; margin: 20px 0px -100px 0px">
+<div class="button-container" style="font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center; padding: 20px 10px 0px 10px;">
   <button class="filtros-button" mat-button (click)="onAREA()">AREA</button>
   <button class="filtros-button" mat-button (click)="onUBICACION()">UBICACION</button>
   <button class="filtros-button" mat-button (click)="onSALARIO()">SALARIO</button>
   <button class="filtros-button" mat-button (click)="onEMPRESA()">EMPRESA</button>
 </div>
 
-<br>
-<br>
-<div class="card-container" style="font-family: 'Poppins', sans-serif;" >
+<div style="font-family: 'Poppins', sans-serif; padding-top: 60px" >
   <ng-container *ngFor="let data of ofertas">
-  <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,data.Empresa)" class="card-item" style="text-align: left;" >
-      <div style="flex: 7; display: flex; align-items: center; padding-bottom: 20px;">
-        <div style="flex: 8; text-align: center;">
-          <img [src]="data.UrlImage" alt="" style="width: 80%; height: auto;" />
-        </div>
-        <div style="flex: 2; text-align: center; height: 85%;">
-          <mat-icon class="{{data.Status}}">work_outline</mat-icon>
-        </div>
+    <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,data.Empresa)" class="cards-bordes">
+      <div class="Job">
+        {{data.Titulo}}
       </div>
-      <div style="flex: 3;">
-        {{ data.Empresa }} <br>
-        Area: {{ data.Area }} <br>
-        Ubicacion: {{ data.Ubicacion }}<br>
-        Salario: {{ data.Salario }}
+      <div class="Content">
+        <div >
+          <img [src]="data.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
+        </div>
+        <div style="margin: auto;">
+          <a>Descripcion de la chamba</a><br>
+          <a>{{data.Descripcion}}</a>
+        </div>
+        <div class="DateEnd">
+          <a>Desde: </a><br>
+          <a>{{data.Fecha_inicio}}</a><br>
+          <a>hasta</a><br>
+          <a>{{data.Fecha_fin}}</a>
+        </div>
       </div>
 
-  </mat-card>
+      <div *ngIf="(data.More)" class="More-information">
+        <div class="Blocks">
+          <a>Requisitos</a><br>
+          <a>{{data.Requisitos}}</a>
+        </div>
+        <div class="Blocks">
+          <a>Funciones</a><br>
+          <a>{{data.Funciones}}</a>
+        </div>
+        <div class="Blocks">
+          <a>Beneficios</a><br>
+          <a>{{data.Beneficios}}</a>
+        </div>
+      </div>
+
+      <div class="Content">
+        <div class="Arrange" style="margin-left: 3.5%">
+          <a>{{data.Ubicacion}}</a>
+        </div>
+        <div style="margin: auto">
+          <button *ngIf="!(data.More)" mat-button class="More" (click)="onMore(data)">Ver más detalles</button>
+          <button *ngIf="(data.More)" mat-button class="Postular">Postular a la chambita</button>
+        </div>
+        <div class="Arrange" style="text-align: center;">
+          <a>{{data.Empresa}}</a><br>
+        </div>
+      </div>
+
+    </mat-card>
   </ng-container>
 </div>

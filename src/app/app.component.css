@@ -8,6 +8,13 @@ html, body {
   background: linear-gradient(to right, #864DDF, #203376); /* Cambia los colores según tus preferencias */
 }
 
+
+@media (max-width: 768px) {
+  .mat-toolbar{
+    font-size: 8px;
+  }
+}
+
 .background-container {
   background: linear-gradient(to right, #864DDF, #203376);
   min-height: 100%;
