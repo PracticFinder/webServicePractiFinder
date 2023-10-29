@@ -1,15 +1,22 @@
  <div>
     <ul class="information_table space-x-1">
       <li class="w-1/2">
-        <table class="w-full ">
-          <tr>
-            <td>
-              <button class="btn-custom"
-                      (click)="showInformacionPersonal()">
-                Información Personal</button>
-            </td>
-          </tr>
+        <ul class="button-list space-y-1 ">
+          <li><button class="btn-custom" (click)="showInformation('personal')">Información Personal</button></li>
+          <li><button class="btn-custom" (click)="showInformation('skills')">Conocimientos y Aptitudes</button></li>
+          <li><button class="btn-custom" (click)="showInformation('courses')">Cursos</button></li>
+          <li><button class="btn-custom" (click)="showInformation('experience')">Experiencia Laboral</button></li>
+          <li><button class="btn-custom" (click)="showInformation('languages')">Idiomas</button></li>
+          <li class="bg-custom-yellow h-full">
+            <div class="bg-custom-yellow flex justify-center items-center p-5">
+              <button class="cv-button ">
+                <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                <span>Descargar CV</span>
+              </button>
+            </div>
+          </li>
 
+<<<<<<< HEAD
           <tr>
             <td>
               <button class="btn-custom"
@@ -65,69 +72,72 @@
 
 
         </table>
+=======
+        </ul>
+>>>>>>> main
       </li>
 
       <li class="w-full">
-        <div *ngIf="mostrarInfoPersonal" class="w-full h-full">
+        <div *ngIf="showInfo.personal" class="w-full h-full">
           <mat-card class="cd-custom">
 
             <div class="p-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <p class="text-lg font-semibold">Nombre:</p>
-                  <p class="text-gray-800">{{ usuario.nombre }}</p>
+                  <input  type="text" [(ngModel)]="usuario.nombre" (ngModelChange)="actualizarUsuario(usuario)">
                 </div>
                 <div>
                   <p class="text-lg font-semibold">Edad:</p>
-                  <p class="text-gray-800">{{ usuario.edad }}</p>
+                  <input  type="text" [(ngModel)]="usuario.edad" (ngModelChange)="actualizarUsuario(usuario)">
                 </div>
               </div>
               <div class="mt-6">
                 <p class="text-lg font-semibold">Correo Electrónico:</p>
-                <p class="text-gray-800">{{ usuario.correo }}</p>
+                <input  type="text" [(ngModel)]="usuario.correo" (ngModelChange)="actualizarUsuario(usuario)">
               </div>
               <div class="mt-6">
                 <p class="text-lg font-semibold">Teléfono:</p>
-                <p class="text-gray-800">{{ usuario.telefono }}</p>
+                <input  type="text" [(ngModel)]="usuario.telefono" (ngModelChange)="actualizarUsuario(usuario)">
               </div>
               <div class="mt-6">
                 <p class="text-lg font-semibold">Dirección:</p>
-                <p class="text-gray-800">{{ usuario.direccion }}</p>
+                <input  type="text" [(ngModel)]="usuario.direccion" (ngModelChange)="actualizarUsuario(usuario)">
               </div>
               <!-- Puedes agregar más detalles de la información personal del usuario aquí -->
             </div>
           </mat-card>
         </div>
 
-        <div *ngIf="mostrarConocimientoYAptitud" class="w-full h-full">
+        <div *ngIf="showInfo.skills" class="w-full h-full">
           <mat-card class="cd-custom">
             <div class="p-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <p class="text-lg font-semibold">Habilidades Técnicas:</p>
                   <ul class="list-disc pl-6">
-                    <li class="text-gray-800">Habilidad 1</li>
-                    <li class="text-gray-800">Habilidad 2</li>
-                    <li class="text-gray-800">Habilidad 3</li>
+                    <li class="text-gray-800"
+                        *ngFor="let habilidad of usuario.habilidades.tecnicas">{{ habilidad }}
+                    </li>
                   </ul>
                 </div>
 
                 <div>
                   <p class="text-lg font-semibold">Habilidades Interpersonales:</p>
                   <ul class="list-disc pl-6">
-                    <li class="text-gray-800">Habilidad 1</li>
-                    <li class="text-gray-800">Habilidad 2</li>
-                    <li class="text-gray-800">Habilidad 3</li>
+                    <li class="text-gray-800"
+                        *ngFor="let habilidad of usuario.habilidades.interpersonales">{{ habilidad }}
+                    </li>
                   </ul>
                 </div>
 
               </div>
               <div class="mt-6">
                 <p class="text-lg font-semibold">Certificaciones:</p>
-                <ul class="list-disc pl-6">
-                  <li class="text-gray-800">Certificación 1</li>
-                  <li class="text-gray-800">Certificación 2</li>
-                  <li class="text-gray-800">Certificación 3</li>
+                <ul>
+                  <li class="text-gray-800"
+                      *ngFor="let certificacion of usuario.habilidades.certificaciones">{{ certificacion }}
+                  </li>
                 </ul>
               </div>
 
@@ -136,89 +146,49 @@
         </div>
 
 
-        <div *ngIf="mostrarCursos" class="w-full h-full">
+        <div *ngIf="showInfo.courses" class="w-full h-full">
           <mat-card class="cd-custom">
             <div class="p-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <p class="text-lg font-semibold">Curso 1:</p>
-                  <p class="text-gray-800">Nombre del primer curso</p>
+                <div *ngFor="let curso of usuario.curso">
+                  <p class="text-lg font-semibold"> Curso: </p>
+                  <p class="text-gray-800">{{ curso }}</p>
                 </div>
-                <div>
-                  <p class="text-lg font-semibold">Curso 2:</p>
-                  <p class="text-gray-800">Nombre del segundo curso</p>
-                </div>
-              </div>
-              <div class="mt-6">
-                <p class="text-lg font-semibold">Curso 3:</p>
-                <p class="text-gray-800">Nombre del tercer curso</p>
-              </div>
-              <div class="mt-6">
-                <p class="text-lg font-semibold">Curso 4:</p>
-                <p class="text-gray-800">Nombre del cuarto curso</p>
               </div>
             </div>
           </mat-card>
         </div>
 
 
-        <div *ngIf="mostrarExperienciaLaboral" class="w-full h-full">
+        <div *ngIf="showInfo.experience" class="w-full h-full">
           <mat-card class="cd-custom">
             <div class="p-6">
-              <div class="mb-6">
-                <p class="text-lg font-semibold">Empresa:</p>
-                <p class="text-gray-800">Nombre de la empresa</p>
-              </div>
-              <div class="mb-6">
-                <p class="text-lg font-semibold">Cargo:</p>
-                <p class="text-gray-800">Título del cargo</p>
-              </div>
-              <div class="mb-6">
-                <p class="text-lg font-semibold">Fechas:</p>
-                <p class="text-gray-800">Fecha de inicio - Fecha de finalización</p>
-              </div>
-              <div class="mb-6">
-                <p class="text-lg font-semibold">Descripción:</p>
-                <p class="text-gray-800">Breve descripción de las responsabilidades y logros en el cargo.</p>
-              </div>
-            </div> <div class="p-6">
-            <div class="mb-6">
+            <div class="mb-6" *ngFor="let experiencia of usuario.experiencias">
               <p class="text-lg font-semibold">Empresa:</p>
-              <p class="text-gray-800">Nombre de la empresa</p>
-            </div>
-            <div class="mb-6">
-              <p class="text-lg font-semibold">Cargo:</p>
-              <p class="text-gray-800">Título del cargo</p>
-            </div>
-            <div class="mb-6">
-              <p class="text-lg font-semibold">Fechas:</p>
-              <p class="text-gray-800">Fecha de inicio - Fecha de finalización</p>
-            </div>
-            <div class="mb-6">
-              <p class="text-lg font-semibold">Descripción:</p>
-              <p class="text-gray-800">Breve descripción de las responsabilidades y logros en el cargo.</p>
-            </div>
+              <p class="text-gray-800"> {{ experiencia.empresa }}</p>
 
+              <p class="text-lg font-semibold">Cargo:</p>
+              <p class="text-gray-800"> {{ experiencia.cargo }}</p>
+
+              <p class="text-lg font-semibold">Fecha:</p>
+              <p class="text-gray-800">{{ experiencia.fechaInicio }} - {{ experiencia.fechaFinalizacion }}</p>
+
+              <p class="text-lg font-semibold">Descripcion:</p>
+              <p class="text-gray-800">{{ experiencia.descripcion }}</p>
+            </div>
           </div>
           </mat-card>
         </div>
 
 
-        <div *ngIf="mostrarIdiomas" class="w-full h-full">
-          <mat-card class="cd-custom">
+        <div *ngIf="showInfo.languages" class="content h-full">
+          <mat-card class="cd-custom ">
             <div class="p-6">
-              <!-- Ejemplo de una lista de idiomas -->
-              <div class="mb-6">
+              <div class="mb-6" *ngFor="let idioma of usuario.idiomas">
                 <div class="flag flag-en"></div>
-                <p class="text-lg font-semibold">Inglés</p>
-                <p class="text-gray-800">Nivel: Avanzado</p>
+                <p class="text-lg font-semibold">{{ idioma.idioma }}</p>
+                <p class="text-gray-800">Nivel: {{ idioma.nivel }}</p>
               </div>
-              <div class="mb-6">
-                <div class="flag flag-es"></div>
-                <p class="text-lg font-semibold">Español</p>
-                <p class="text-gray-800">Nivel: Nativo</p>
-              </div>
-              <!-- Puedes agregar más idiomas según sea necesario -->
             </div>
           </mat-card>
         </div>

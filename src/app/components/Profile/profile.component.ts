@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-profile',
@@ -7,10 +8,22 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
-  usuario = {
-    nombre: 'Nombre del Usuario',
-    imagen: 'https://cdn-icons-png.flaticon.com/512/17/17004.png',
-    edad: 25,
-    hobbies: ['Hobby 1', 'Hobby 2', 'Hobby 3']
-  };
+
+  usuario: any;
+
+  constructor(private userService: UserService) {
+  }
+
+  ngOnInit(): void {
+    this.userService.getUsuario().subscribe((data: any) => {
+      this.usuario = data;
+    });
+  }
+
+  updateUsuario(updatedInfo: any): void {
+    this.userService.updateUsuario(updatedInfo).subscribe((data: any) => {
+      this.usuario = data; // Actualiza la información del usuario con la respuesta del servidor
+    });
+  }
+
 }
