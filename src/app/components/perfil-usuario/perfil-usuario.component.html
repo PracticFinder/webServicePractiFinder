@@ -1,7 +1,9 @@
 
   <div class="perfil-usuario">
     <div *ngIf="usuario" class="usuario-card">
+      <div class="imagen-container">
         <img [src]="usuario.imagen" alt="{{ usuario.nombre }}" />
+      </div>
         <div class="cuadro">
         <div class="columna-1">
             <div class="fila-clickeable" (click)="mostrarCategoria('informacionPersonal')">Información Personal</div>

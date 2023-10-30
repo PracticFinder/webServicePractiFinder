@@ -1,14 +1,40 @@
 .perfil-usuario {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  width: 100%; /* Cambia el ancho al 100% para ocupar todo el ancho disponible */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  min-height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.usuario-card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3f51b5; /* Color de fondo del perfil */
+  padding: 20px;
+  border: 10px solid #ffffff;
+}
+
+.imagen-container {
+  text-align: center; /* Centra la imagen horizontalmente */
+  margin-bottom: 20px; /* Espacio opcional entre la imagen y el contenido */
+  border: 10px solid #ccc;
+  max-width: 30%;
+}
+
+.imagen-container img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+/* Resto de tus estilos... */
+
   
   .columna-1 {
     flex: 1;
     padding: 10px;
-    border-right: 1px solid #ccc;
+    border-right: px solid #ccc;
   }
   
   .columna-2 {
@@ -19,12 +45,12 @@
   .fila-clickeable {
     padding: 10px;
     cursor: pointer;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
     transition: background-color 0.3s;
   }
   
   .fila-clickeable:hover {
-    background-color: #f0f0f0;
+    background-color: #fbff00;
   }
   
   .fila-botones {
@@ -48,3 +74,4 @@
     display: flex;
     width: 100%;
   }
+  
