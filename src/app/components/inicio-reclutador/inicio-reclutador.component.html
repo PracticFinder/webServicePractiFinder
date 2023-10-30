@@ -1,0 +1,11 @@
+<section class="postulantes">
+    <div class="usuarios-grid">
+        <div *ngFor="let usuario of usuarios" class="usuario-card">
+          <img [src]="usuario.imagen" alt="{{ usuario.nombre }}" />
+          <h3>{{ usuario.nombre }}</h3>
+          <button (click)="verPerfil(usuario)">Ver Perfil</button>
+        </div>
+      </div>
+</section>
+
+  

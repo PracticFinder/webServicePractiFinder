@@ -27,4 +27,7 @@ export class LoginComponent {
   irAHome() {
     this.router.navigate(['/inicio']);
   }
+  irHomeReclutador() {
+    this.router.navigate(['/inicio-reclutador']);
+  }
 }

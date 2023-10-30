@@ -1,0 +1,59 @@
+
+  <div class="perfil-usuario">
+    <div *ngIf="usuario" class="usuario-card">
+        <img [src]="usuario.imagen" alt="{{ usuario.nombre }}" />
+        <div class="cuadro">
+        <div class="columna-1">
+            <div class="fila-clickeable" (click)="mostrarCategoria('informacionPersonal')">Información Personal</div>
+            <div class="fila-clickeable" (click)="mostrarCategoria('conocimientosAptitudes')">Conocimientos y Aptitudes</div>
+            <div class="fila-clickeable" (click)="mostrarCategoria('cursos')">Cursos</div>
+            <div class="fila-clickeable" (click)="mostrarCategoria('experienciaLaboral')">Experiencia Laboral</div>
+            <div class="fila-clickeable" (click)="mostrarCategoria('idiomas')">Idiomas</div>
+            <div class="fila-botones">
+              <button (click)="rechazarUsuario()">Rechazar</button>
+              <button (click)="aceptarUsuario()">Aceptar</button>
+            </div>
+          </div>
+          <div class="columna-2">
+            <div *ngIf="categoriaSeleccionada === 'informacionPersonal'">
+                <h3>{{ usuario.nombre }}</h3>
+                <p>Edad: {{ usuario.edad }}</p>
+                <p>Teléfono: {{ usuario.telefono }}</p>
+                <p>Dirección: {{ usuario.direccion }}</p>
+                <p>Correo: {{ usuario.correo }}</p>
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'conocimientosAptitudes'">
+                <p>Habilidades Técnicas: {{ usuario.habilidades.tecnicas.join(', ') }}</p>
+                <p>Habilidades Interpersonales: {{ usuario.habilidades.interpersonales.join(', ') }}</p>
+          
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'cursos'">
+                <p>Certificaciones: {{ usuario.habilidades.certificaciones.join(', ') }}</p>
+                <p>Cursos: {{ usuario.curso.join(', ') }}</p>
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'experienciaLaboral'">
+                <h4>Experiencias:</h4>
+                <ul>
+                  <li *ngFor="let experiencia of usuario.experiencias">
+                    <p>Empresa: {{ experiencia.empresa }}</p>
+                    <p>Cargo: {{ experiencia.cargo }}</p>
+                    <p>Fecha de Inicio: {{ experiencia.fechaInicio }}</p>
+                    <p>Fecha de Finalización: {{ experiencia.fechaFinalizacion }}</p>
+                    <p>Descripción: {{ experiencia.descripcion }}</p>
+                  </li>
+                </ul>
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'idiomas'">
+                <h4>Idiomas:</h4>
+                <ul>
+                  <li *ngFor="let idioma of usuario.idiomas">
+                    <p>Idioma: {{ idioma.idioma }}</p>
+                    <p>Nivel: {{ idioma.nivel }}</p>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  

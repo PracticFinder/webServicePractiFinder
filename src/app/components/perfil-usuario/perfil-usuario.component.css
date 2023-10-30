@@ -1,0 +1,50 @@
+.perfil-usuario {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .columna-1 {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .columna-2 {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  .fila-clickeable {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+  }
+  
+  .fila-clickeable:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .fila-botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .cuadro{
+    display: flex;
+    width: 100%;
+  }

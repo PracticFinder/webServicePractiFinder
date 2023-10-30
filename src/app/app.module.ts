@@ -29,6 +29,9 @@ import {ToolbarService} from "./services/toolbar.service";
 import {LocalToolbarServiceService} from "./services/local-toolbar-service.service";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatListModule} from "@angular/material/list";
+import { InicioReclutadorComponent } from './components/inicio-reclutador/inicio-reclutador.component';
+import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,9 @@ import {MatListModule} from "@angular/material/list";
     LoginComponent,
     SignUpComponent,
     RememberPasswordComponent,
-    NavbarComponent
+    NavbarComponent,
+    InicioReclutadorComponent,
+    PerfilUsuarioComponent
   ],
   imports: [
     AppRoutingModule,
