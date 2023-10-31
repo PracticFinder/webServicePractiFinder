@@ -1,23 +1,31 @@
 
-  <div class="perfil-usuario">
-    <div *ngIf="usuario" class="usuario-card">
-      <div class="imagen-container">
-        <img [src]="usuario.imagen" alt="{{ usuario.nombre }}" />
+
+    <div *ngIf="usuario">
+      <div class="photo-wrapper p-2 ">
+        <img class="w-40 h-40 rounded-full mx-auto border-8 border-custom-yellow" [src]="usuario.imagen" alt="{{ usuario.nombre }}">
       </div>
-        <div class="cuadro">
-        <div class="columna-1">
-            <div class="fila-clickeable" (click)="mostrarCategoria('informacionPersonal')">Información Personal</div>
-            <div class="fila-clickeable" (click)="mostrarCategoria('conocimientosAptitudes')">Conocimientos y Aptitudes</div>
-            <div class="fila-clickeable" (click)="mostrarCategoria('cursos')">Cursos</div>
-            <div class="fila-clickeable" (click)="mostrarCategoria('experienciaLaboral')">Experiencia Laboral</div>
-            <div class="fila-clickeable" (click)="mostrarCategoria('idiomas')">Idiomas</div>
-            <div class="fila-botones">
-              <button (click)="rechazarUsuario()">Rechazar</button>
-              <button (click)="aceptarUsuario()">Aceptar</button>
-            </div>
-          </div>
-          <div class="columna-2">
-            <div *ngIf="categoriaSeleccionada === 'informacionPersonal'">
+      <div>
+      <ul class="information_table space-x-1">
+        <li class="w-1/2">
+          <ul class="button-list space-y-1 ">
+            <li><button class="btn-custom" (click)="mostrarCategoria('informacionPersonal')">Información Personal</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('conocimientosAptitudes')">Conocimientos y Aptitudes</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('cursos')">Cursos</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('experienciaLaboral')">Experiencia Laboral</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('idiomas')">Idiomas</button></li>
+            <li class="bg-custom-yellow h-full">
+              <div class="fila-botones">
+                <button (click)="rechazarUsuario()">Rechazar</button>
+                <button (click)="aceptarUsuario()">Aceptar</button>
+              </div>
+            </li>
+  
+          </ul>
+        </li>
+        <li class="w-full">
+          <div class="w-full h-full">
+            <mat-card class="cd-custom">
+              <div *ngIf="categoriaSeleccionada === 'informacionPersonal'">
                 <h3>{{ usuario.nombre }}</h3>
                 <p>Edad: {{ usuario.edad }}</p>
                 <p>Teléfono: {{ usuario.telefono }}</p>
@@ -54,8 +62,12 @@
                   </li>
                 </ul>
             </div>
+            </mat-card>
           </div>
-        </div>
+        </li>
+      </ul>
     </div>
   </div>
+
+
   

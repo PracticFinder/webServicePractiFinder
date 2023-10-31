@@ -1,77 +1,76 @@
-.perfil-usuario {
-  width: 100%; /* Cambia el ancho al 100% para ocupar todo el ancho disponible */
+.button-list {
+  list-style: none;
+  padding: 1px;
+}
+.fila-botones {
   display: flex;
-  align-items: center;
-  justify-content: center; /* Centra horizontalmente */
-  min-height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la pantalla */
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.usuario-card {
-  width: 80%;
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.cuadro{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #3f51b5; /* Color de fondo del perfil */
-  padding: 20px;
-  border: 10px solid #ffffff;
+  width: 100%;
 }
-
-.imagen-container {
-  text-align: center; /* Centra la imagen horizontalmente */
-  margin-bottom: 20px; /* Espacio opcional entre la imagen y el contenido */
-  border: 10px solid #ccc;
-  max-width: 30%;
-}
-
-.imagen-container img {
-  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
-  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-}
-
-/* Resto de tus estilos... */
-
-  
-  .columna-1 {
-    flex: 1;
-    padding: 10px;
-    border-right: px solid #ccc;
-  }
-  
-  .columna-2 {
-    flex: 2;
-    padding: 10px;
-  }
-  
-  .fila-clickeable {
-    padding: 10px;
-    cursor: pointer;
-    border-bottom: 2px solid #ccc;
-    transition: background-color 0.3s;
-  }
-  
-  .fila-clickeable:hover {
-    background-color: #fbff00;
-  }
-  
-  .fila-botones {
+.information_table{
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  .cuadro{
-    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 30px;
+    padding: 4px;
+    background: linear-gradient(to right, #864DDF, #203376);
+
+}
+
+  .btn-custom {
+    background-color: #FEB543; /* Color de fondo personalizado */
+    color: #ffffff; /* Color de texto personalizado */
+    padding: 15px  30px; /* Espaciado del botón */
     width: 100%;
+    font-size: 20px;
   }
-  
+
+  .btn-custom:hover {
+    background-color: #3B82F6; /* Nuevo color de fondo en hover */
+  }
+
+  .cd-custom{
+    background-color: #1F2937; /* Nuevo color de fondo para las tarjetas */
+    color: #FFFFFF; /* Nuevo color de texto en las tarjetas */
+    height: 100%;
+  }
+
+  .cv-button {
+    background-color: #864DDF; /* Color de fondo púrpura (#864DDF) */
+    color: #fff; /* Color de texto blanco */
+
+    padding: 0.75rem 1.5rem; /* Ajusta el tamaño del botón según tus preferencias */
+    border-radius: 0.5rem; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Establecer el color de fondo cuando se pasa el cursor */
+  .cv-button:hover {
+    background-color: #6A42DC; /* Cambia el color de fondo al pasar el cursor (#6A42DC) */
+  }
+
+input[type="text"] {
+  background-color: #1F2937; /* Color de fondo del input para que combine con las tarjetas */
+  color: #FFFFFF; /* Color del texto del input */
+  padding: 10px; /* Espaciado del input */
+  border: 1px solid #FEB543; /* Borde del input */
+  border-radius: 5px; /* Borde redondeado del input */
+}

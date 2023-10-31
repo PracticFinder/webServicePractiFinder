@@ -36,5 +36,6 @@ export class PerfilUsuarioComponent implements OnInit{
         });
       }
     });
+    this.categoriaSeleccionada='informacionPersonal';
   }
 }
