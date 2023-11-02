@@ -10,11 +10,8 @@ import {ProfileComponent} from "../components/Profile/profile.component";
 import {LoginComponent} from "../components/login/login.component";
 import {SignUpComponent} from "../components/sign-up/sign-up.component";
 import {RememberPasswordComponent} from "../components/remember-password/remember-password.component";
-import { InicioReclutadorComponent } from '../components/inicio-reclutador/inicio-reclutador.component';
-import { PerfilUsuarioComponent } from '../components/perfil-usuario/perfil-usuario.component';
 
 const routes: Routes =[
-  { path: 'perfil/:nombreUsuario', component: PerfilUsuarioComponent },
   {
     path: 'app-login', component: LoginComponent
   },
@@ -25,7 +22,6 @@ const routes: Routes =[
     path: 'app-remember-password', component: RememberPasswordComponent
   },
   {path: 'inicio', component: InicioComponent},
-  {path: 'inicio-reclutador', component: InicioReclutadorComponent},
   {path: 'mis-postulaciones', component: MisPostulacionesComponent},
   {path: 'soporte', component: SoporteComponent},
   {path: 'notificaciones', component: NotificacionesComponent},

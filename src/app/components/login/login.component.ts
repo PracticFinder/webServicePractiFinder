@@ -28,6 +28,6 @@ export class LoginComponent {
     this.router.navigate(['/inicio']);
   }
   irHomeReclutador() {
-    this.router.navigate(['/inicio-reclutador']);
+    this.router.navigate(['/inicio']);
   }
 }
