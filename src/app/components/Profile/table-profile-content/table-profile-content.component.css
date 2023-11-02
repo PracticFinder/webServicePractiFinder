@@ -13,23 +13,25 @@
 
 }
 
-  .btn-custom {
+.btn-custom {
     background-color: #FEB543; /* Color de fondo personalizado */
     color: #ffffff; /* Color de texto personalizado */
     padding: 15px  30px; /* Espaciado del botón */
     width: 100%;
     font-size: 20px;
-  }
+}
 
-  .btn-custom:hover {
+.btn-custom:hover {
     background-color: #3B82F6; /* Nuevo color de fondo en hover */
-  }
+}
 
-  .cd-custom{
-    background-color: #1F2937; /* Nuevo color de fondo para las tarjetas */
-    color: #FFFFFF; /* Nuevo color de texto en las tarjetas */
-    height: 100%;
-  }
+.cd-custom {
+  background-color: #1F2937;
+  color: #FFFFFF;
+  height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+}
 
   .cv-button {
     background-color: #864DDF; /* Color de fondo púrpura (#864DDF) */
@@ -58,7 +60,7 @@ input[type="text"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  color:black;
+  color: black;
 }
 
 .card {
@@ -70,23 +72,4 @@ input[type="text"] {
   margin: 4px;
 }
 
-button.mat-icon-button {
-  background-color: #4caf50;
-  color: white;
-  margin-left: 8px;
-}
 
-button.mat-icon-button.add-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #4caf50;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin: 4px;
-}
-
-button.mat-icon-button.add-button:hover {
-  background-color: #388e3c;
-}

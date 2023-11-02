@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Agregar Habilidad {{ data.skillType }}</h2>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput placeholder="Ingrese la habilidad" [(ngModel)]="enteredSkill">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Cancelar</button>
+  <button mat-button [disabled]="!enteredSkill" (click)="confirmSelection()">Aceptar</button>
+</div>

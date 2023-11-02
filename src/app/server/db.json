@@ -1,61 +1,48 @@
 {
   "usuario": {
-    "nombre": "asd",
+    "nombre": "Jesus Espinoza",
     "imagen": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
-    "edad": "asd",
+    "edad": "23",
     "telefono": "+51 921 123 123",
-    "direccion": "asddddddd",
+    "direccion": "Urb. Santa `M",
     "habilidades": {
       "tecnicas": [
-        "Habilidad 1",
-        "Habilidad 2",
-        "Habilidad 3"
+        "C++",
+        "Python",
+        "Office",
+        "Angular",
+        "SpringBoot"
       ],
       "interpersonales": [
-        "Habilidad 1",
-        "Habilidad 2",
-        "Habilidad 3"
-      ],
-      "certificaciones": [
-        "Certificación 1",
-        "Certificación 2",
-        "Certificación 3"
+        "Compañerismo",
+        "Liderazgo",
+        "Trabajo en Equipo"
       ]
     },
-    "curso": [
+    "certificaciones": [
       {
         "nombre": "Mat 1",
-        "institucion": "UPC",
-        "fechaInicio": "Enero 2022",
-        "fechaFinalizacion": "Marzo 2022",
+        "nombreInstitucion": "Mat 1",
+        "fechaObtencion": "10/20/2023"
       },
       {
-        "nombre": "Biologia 1",
-        "institucion": "UPC",
-        "fechaInicio": "Enero 2022",
-        "fechaFinalizacion": "Marzo 2022",
+        "nombre": "asd",
+        "nombreInstitucion": "asd",
+        "fechaObtencion": "el 1 de noviembre del 2023"
       },
       {
-        "nombre": "Ciencias 1",
-        "institucion": "UPC",
-        "fechaInicio": "Enero 2022",
-        "fechaFinalizacion": "Marzo 2022",
+        "nombre": "sad",
+        "nombreInstitucion": "asd",
+        "fechaObtencion": " 1 de noviembre del 2023"
       }
     ],
     "experiencias": [
       {
-        "empresa": "Empresa 1",
-        "cargo": "Ingeniero",
-        "fechaInicio": "20 de Octubre 2023",
-        "fechaFinalizacion": "10 de Diciembre 2023",
-        "descripcion": "Mantenimiento como ingeniero"
-      },
-      {
-        "empresa": "Empresa 2",
-        "cargo": "Ingeniero",
-        "fechaInicio": "10 de Abril 2022",
-        "fechaFinalizacion": "30 de Noviembre 2023",
-        "descripcion": "Mantenimiento de software"
+        "empresa": "Google",
+        "cargo": "Ingeniero de Software",
+        "fechaInicio": " 9 de marzo del 2017",
+        "fechaFinalizacion": " 4 de noviembre del 2021",
+        "descripcion": "Trabaje como Ingeniero de Software"
       }
     ],
     "idiomas": [
@@ -72,6 +59,6 @@
         "idioma": "Italiano"
       }
     ],
-    "correo": "enzotrujilloacosta@gmail.com"
+    "correo": "jesusespinoza@gmail.com"
   }
 }

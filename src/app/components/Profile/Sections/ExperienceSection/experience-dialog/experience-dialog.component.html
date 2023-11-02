@@ -1,0 +1,32 @@
+<h2 mat-dialog-title>Agregar Experiencia</h2>
+<div mat-dialog-content>
+  <form [formGroup]="experienceForm">
+    <mat-form-field>
+      <input matInput placeholder="Empresa" formControlName="empresa">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Cargo" formControlName="cargo">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Fecha de inicio" formControlName="fechaInicio">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="Fecha de finalización" formControlName="fechaFinalizacion">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea matInput placeholder="Descripción" formControlName="descripcion"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Cancelar</button>
+  <button mat-button (click)="onAddExperience()" [disabled]="experienceForm.invalid">Agregar</button>
+</div>
