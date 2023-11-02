@@ -1,5 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {UserService} from "../../../services/user.service";
+import { MatDialog } from '@angular/material/dialog';
+import {AddSkillDialogComponent} from "../Sections/SkillSection/add-skill-dialog/add-skill-dialog.component";
 
 @Component({
   selector: 'app-table-profile-content',
@@ -8,11 +10,8 @@ import {UserService} from "../../../services/user.service";
 })
 export class TableProfileContentComponent {
   @Input() usuario: any;
-  @Output() ejecutarFuncion = new EventEmitter<string>();
 
-  ejecutarFuncionExterna(parametro: string) {
-    this.ejecutarFuncion.emit(parametro);
-  }
+
   showInfo: {
     personal: boolean,
     skills: boolean,
@@ -23,7 +22,7 @@ export class TableProfileContentComponent {
 
   longtable: boolean;
 
-  constructor(private usuarioService: UserService) {
+  constructor(private usuarioService: UserService, public dialog: MatDialog) {
     this.showInfo = {
       personal: true,
       skills: false,
@@ -33,13 +32,8 @@ export class TableProfileContentComponent {
     };
     this.longtable = false;
   }
-  ngOnInit(): void {
-    this.usuarioService.getUsuario().subscribe((data: any) => {
-      this.usuario = data;
-    });
-  }
 
-  // Función para actualizar el usuario
+
   actualizarUsuario(updatedInfo: any): void {
     this.usuarioService.updateUsuario(updatedInfo).subscribe((data: any) => {
     });
@@ -57,12 +51,6 @@ export class TableProfileContentComponent {
     this.longtable = section === 'experience';
   }
 
-  editarHabilidadTecnica(habilidad: string) {
-    // Lógica para editar la habilidad técnica
-  }
 
-  agregarHabilidadTecnica() {
-    // Lógica para agregar una nueva habilidad técnica
-    // Podría mostrar un cuadro de diálogo o un formulario para que el usuario ingrese la nueva habilidad técnica
-  }
+
 }

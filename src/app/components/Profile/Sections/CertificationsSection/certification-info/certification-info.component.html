@@ -1,0 +1,16 @@
+<mat-card class="cd-custom">
+  <div class="p-6">
+    <p class="text-lg font-semibold"> Certificaciones: </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div *ngFor="let certificacion of usuario.certificaciones" class="certificacion-card">
+        <div class="certificacion-info">
+          <p><strong>Nombre:</strong> {{ certificacion.nombre }}</p>
+          <p><strong>Institución:</strong> {{ certificacion.nombreInstitucion }}</p>
+          <p><strong>Fecha de obtención:</strong> {{ certificacion.fechaObtencion }}</p>
+        </div>
+        <button class="delete-button" (click)="borrarCertificacion(certificacion)">Borrar</button>
+      </div>
+    </div>
+    <button class="add-button" (click)="agregarCertificacion()">Agregar certificación</button>
+  </div>
+</mat-card>

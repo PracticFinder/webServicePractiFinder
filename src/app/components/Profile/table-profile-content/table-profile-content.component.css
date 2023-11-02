@@ -13,23 +13,25 @@
 
 }
 
-  .btn-custom {
+.btn-custom {
     background-color: #FEB543; /* Color de fondo personalizado */
     color: #ffffff; /* Color de texto personalizado */
     padding: 15px  30px; /* Espaciado del botón */
     width: 100%;
     font-size: 20px;
-  }
+}
 
-  .btn-custom:hover {
+.btn-custom:hover {
     background-color: #3B82F6; /* Nuevo color de fondo en hover */
-  }
+}
 
-  .cd-custom{
-    background-color: #1F2937; /* Nuevo color de fondo para las tarjetas */
-    color: #FFFFFF; /* Nuevo color de texto en las tarjetas */
-    height: 100%;
-  }
+.cd-custom {
+  background-color: #1F2937;
+  color: #FFFFFF;
+  height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+}
 
   .cv-button {
     background-color: #864DDF; /* Color de fondo púrpura (#864DDF) */
@@ -54,3 +56,20 @@ input[type="text"] {
   border: 1px solid #FEB543; /* Borde del input */
   border-radius: 5px; /* Borde redondeado del input */
 }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: black;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 4px;
+}
+
+

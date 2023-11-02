@@ -16,7 +16,7 @@ import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import {RouterOutlet} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ProfileComponent} from "./components/Profile/profile.component";
 import {TableProfileContentComponent} from "./components/Profile/table-profile-content/table-profile-content.component";
 import {LoginComponent} from "./components/login/login.component";
@@ -29,9 +29,19 @@ import {ToolbarService} from "./services/toolbar.service";
 import {LocalToolbarServiceService} from "./services/local-toolbar-service.service";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatListModule} from "@angular/material/list";
-import { InicioReclutadorComponent } from './components/inicio-reclutador/inicio-reclutador.component';
-import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
-
+import { AddSkillDialogComponent } from './components/Profile/Sections/SkillSection/add-skill-dialog/add-skill-dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import { PersonalInfoComponent } from './components/Profile/Sections/PersonalInfoSection/personal-info/personal-info.component';
+import { SkillInfoComponent } from './components/Profile/Sections/SkillSection/skill-info/skill-info.component';
+import { CertificationInfoComponent } from './components/Profile/Sections/CertificationsSection/certification-info/certification-info.component';
+import { ExperienceInfoComponent } from './components/Profile/Sections/ExperienceSection/experience-info/experience-info.component';
+import { EditCertificacionDialogComponent } from './components/Profile/Sections/CertificationsSection/edit-certificacion-dialog/edit-certificacion-dialog.component';
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import { ExperienceDialogComponent } from './components/Profile/Sections/ExperienceSection/experience-dialog/experience-dialog.component';
+import { LanguagesInfoComponent } from './components/Profile/Sections/LanguagesSection/languages-info/languages-info.component';
+import { LanguageDialogComponent } from './components/Profile/Sections/LanguagesSection/language-dialog/language-dialog.component';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -47,8 +57,15 @@ import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuar
     SignUpComponent,
     RememberPasswordComponent,
     NavbarComponent,
-    InicioReclutadorComponent,
-    PerfilUsuarioComponent
+    AddSkillDialogComponent,
+    PersonalInfoComponent,
+    SkillInfoComponent,
+    CertificationInfoComponent,
+    ExperienceInfoComponent,
+    EditCertificacionDialogComponent,
+    ExperienceDialogComponent,
+    LanguagesInfoComponent,
+    LanguageDialogComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -66,6 +83,12 @@ import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuar
     MatInputModule,
     MatGridListModule,
     MatListModule,
+    MatDialogModule,
+    MatDatepickerModule,
+    ReactiveFormsModule,
+    MatNativeDateModule,
+    MatSelectModule
+
   ],
   providers: [ToolbarService, LocalToolbarServiceService],
   bootstrap: [AppComponent]

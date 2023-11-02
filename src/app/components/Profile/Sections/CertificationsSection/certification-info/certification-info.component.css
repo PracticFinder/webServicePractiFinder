@@ -1,0 +1,55 @@
+/* Estilos actualizados para mejorar el diseño y espaciado */
+.cd-custom {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding-bottom: 60px;
+}
+
+.certificacion-card {
+  background-color: #2b3945;
+  color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  position: relative;
+}
+
+.certificacion-info {
+  margin-bottom: 15px;
+}
+
+.certificacion-info p {
+  margin-bottom: 8px;
+}
+
+.delete-button {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #d83444;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.add-button:hover {
+  background-color: #388e3c;
+}

@@ -1,95 +1,64 @@
 {
-  "usuarios": [
-    {
-      "nombre": "Usuario 1",
-      "imagen": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
-      "edad": "Edad 1",
-      "telefono": "+51 921 123 123",
-      "direccion": "Dirección 1",
-      "habilidades": {
-        "tecnicas": ["Habilidad 1", "Habilidad 2", "Habilidad 3"],
-        "interpersonales": ["Habilidad 1", "Habilidad 2", "Habilidad 3"],
-        "certificaciones": ["Certificación 1", "Certificación 2", "Certificación 3"]
-      },
-      "curso": ["Curso 1", "Curso 2", "Curso 3"],
-      "experiencias": [
-        {
-          "empresa": "Empresa 1",
-          "cargo": "Ingeniero",
-          "fechaInicio": "20 de Octubre 2023",
-          "fechaFinalizacion": "10 de Diciembre 2023",
-          "descripcion": "Mantenimiento como ingeniero"
-        },
-        {
-          "empresa": "Empresa 2",
-          "cargo": "Ingeniero",
-          "fechaInicio": "10 de Abril 2022",
-          "fechaFinalizacion": "30 de Noviembre 2023",
-          "descripcion": "Mantenimiento de software"
-        }
+  "usuario": {
+    "nombre": "Jesus Espinoza",
+    "imagen": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
+    "edad": "23",
+    "telefono": "+51 921 123 123",
+    "direccion": "Urb. Santa `M",
+    "habilidades": {
+      "tecnicas": [
+        "C++",
+        "Python",
+        "Office",
+        "Angular",
+        "SpringBoot"
       ],
-      "idiomas": [
-        { "nivel": "Avanzado", "idioma": "Inglés" },
-        { "nivel": "Nativo", "idioma": "Español" },
-        { "nivel": "Intermedio", "idioma": "Italiano" }
-      ],
-      "correo": "usuario1@example.com"
+      "interpersonales": [
+        "Compañerismo",
+        "Liderazgo",
+        "Trabajo en Equipo"
+      ]
     },
-    {
-      "nombre": "Usuario 2",
-      "imagen": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
-      "edad": "Edad 2",
-      "telefono": "+51 921 234 234",
-      "direccion": "Dirección 2",
-      "habilidades": {
-        "tecnicas": ["Habilidad 4", "Habilidad 5", "Habilidad 6"],
-        "interpersonales": ["Habilidad 4", "Habilidad 5", "Habilidad 6"],
-        "certificaciones": ["Certificación 4", "Certificación 5", "Certificación 6"]
+    "certificaciones": [
+      {
+        "nombre": "Mat 1",
+        "nombreInstitucion": "Mat 1",
+        "fechaObtencion": "10/20/2023"
       },
-      "curso": ["Curso 4", "Curso 5", "Curso 6"],
-      "experiencias": [
-        {
-          "empresa": "Empresa 3",
-          "cargo": "Desarrollador",
-          "fechaInicio": "15 de Enero 2023",
-          "fechaFinalizacion": "5 de Noviembre 2023",
-          "descripcion": "Desarrollo de aplicaciones"
-        }
-      ],
-      "idiomas": [
-        { "nivel": "Avanzado", "idioma": "Francés" },
-        { "nivel": "Nativo", "idioma": "Alemán" },
-        { "nivel": "Intermedio", "idioma": "Chino" }
-      ],
-      "correo": "usuario2@example.com"
-    },
-    {
-      "nombre": "Usuario 3",
-      "imagen": "https://cdn-icons-png.flaticon.com/512/17/17004.png",
-      "edad": "Edad 3",
-      "telefono": "+51 921 345 345",
-      "direccion": "Dirección 3",
-      "habilidades": {
-        "tecnicas": ["Habilidad 7", "Habilidad 8", "Habilidad 9"],
-        "interpersonales": ["Habilidad 7", "Habilidad 8", "Habilidad 9"],
-        "certificaciones": ["Certificación 7", "Certificación 8", "Certificación 9"]
+      {
+        "nombre": "asd",
+        "nombreInstitucion": "asd",
+        "fechaObtencion": "el 1 de noviembre del 2023"
       },
-      "curso": ["Curso 7", "Curso 8", "Curso 9"],
-      "experiencias": [
-        {
-          "empresa": "Empresa 4",
-          "cargo": "Consultor",
-          "fechaInicio": "8 de Marzo 2023",
-          "fechaFinalizacion": "12 de Octubre 2023",
-          "descripcion": "Consultoría en negocios"
-        }
-      ],
-      "idiomas": [
-        { "nivel": "Avanzado", "idioma": "Portugués" },
-        { "nivel": "Nativo", "idioma": "Japonés" },
-        { "nivel": "Intermedio", "idioma": "Ruso" }
-      ],
-      "correo": "usuario3@example.com"
-    }
-  ]
+      {
+        "nombre": "sad",
+        "nombreInstitucion": "asd",
+        "fechaObtencion": " 1 de noviembre del 2023"
+      }
+    ],
+    "experiencias": [
+      {
+        "empresa": "Google",
+        "cargo": "Ingeniero de Software",
+        "fechaInicio": " 9 de marzo del 2017",
+        "fechaFinalizacion": " 4 de noviembre del 2021",
+        "descripcion": "Trabaje como Ingeniero de Software"
+      }
+    ],
+    "idiomas": [
+      {
+        "nivel": "Avanzado",
+        "idioma": "Ingles"
+      },
+      {
+        "nivel": "Nativo",
+        "idioma": "Español"
+      },
+      {
+        "nivel": "Intermedio",
+        "idioma": "Italiano"
+      }
+    ],
+    "correo": "jesusespinoza@gmail.com"
+  }
 }

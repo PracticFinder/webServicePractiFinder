@@ -6,7 +6,7 @@ import {BehaviorSubject, Observable} from "rxjs";
   providedIn: 'root'
 })
 export class UserService {
-  private usuarioUrl = 'http://localhost:3001/usuarios';
+  private usuarioUrl = 'http://localhost:3000/usuario';
   private usuarioSubject: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   public usuario$: Observable<any> = this.usuarioSubject.asObservable();
 

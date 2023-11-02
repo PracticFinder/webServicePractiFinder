@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Agregar Certificación</h1>
+<div mat-dialog-content>
+  <form [formGroup]="nuevaCertificacionForm">
+    <mat-form-field>
+      <input matInput placeholder="Nombre" formControlName="nombre">
+      <mat-error *ngIf="nuevaCertificacionForm.controls['nombre'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Institución" formControlName="nombreInstitucion">
+      <mat-error *ngIf="nuevaCertificacionForm.controls['nombreInstitucion'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Fecha de Obtención" formControlName="fechaObtencion">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="nuevaCertificacionForm.controls['fechaObtencion'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [disabled]="!nuevaCertificacionForm.valid" (click)="saveCertificacion()" cdkFocusInitial>Aceptar</button>
+</div>

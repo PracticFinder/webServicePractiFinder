@@ -21,118 +21,27 @@
 
       <li class="w-full">
         <div *ngIf="showInfo.personal" class="w-full h-full">
-          <mat-card class="cd-custom">
-
-            <div class="p-6">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <p class="text-lg font-semibold">Nombre:</p>
-                  <input  type="text" [(ngModel)]="usuario.nombre" (ngModelChange)="actualizarUsuario(usuario)">
-                </div>
-                <div>
-                  <p class="text-lg font-semibold">Edad:</p>
-                  <input  type="text" [(ngModel)]="usuario.edad" (ngModelChange)="actualizarUsuario(usuario)">
-                </div>
-              </div>
-              <div class="mt-6">
-                <p class="text-lg font-semibold">Correo Electrónico:</p>
-                <input  type="text" [(ngModel)]="usuario.correo" (ngModelChange)="actualizarUsuario(usuario)">
-              </div>
-              <div class="mt-6">
-                <p class="text-lg font-semibold">Teléfono:</p>
-                <input  type="text" [(ngModel)]="usuario.telefono" (ngModelChange)="actualizarUsuario(usuario)">
-              </div>
-              <div class="mt-6">
-                <p class="text-lg font-semibold">Dirección:</p>
-                <input  type="text" [(ngModel)]="usuario.direccion" (ngModelChange)="actualizarUsuario(usuario)">
-              </div>
-              <!-- Puedes agregar más detalles de la información personal del usuario aquí -->
-            </div>
-          </mat-card>
+          <app-personal-info [usuario]="usuario"/>
         </div>
 
         <div *ngIf="showInfo.skills" class="w-full h-full">
-          <mat-card class="cd-custom">
-            <div class="p-6">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <p class="text-lg font-semibold">Habilidades Técnicas:</p>
-                  <ul class="list-disc pl-6">
-                    <li class="text-gray-800"
-                        *ngFor="let habilidad of usuario.habilidades.tecnicas">{{ habilidad }}
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p class="text-lg font-semibold">Habilidades Interpersonales:</p>
-                  <ul class="list-disc pl-6">
-                    <li class="text-gray-800"
-                        *ngFor="let habilidad of usuario.habilidades.interpersonales">{{ habilidad }}
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-              <div class="mt-6">
-                <p class="text-lg font-semibold">Certificaciones:</p>
-                <ul>
-                  <li class="text-gray-800"
-                      *ngFor="let certificacion of usuario.habilidades.certificaciones">{{ certificacion }}
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-          </mat-card>
+          <app-skill-info [usuario]="usuario"
+                         (actualizarUsuarioEvent)="actualizarUsuario($event)"/>
         </div>
 
 
         <div *ngIf="showInfo.courses" class="w-full h-full">
-          <mat-card class="cd-custom">
-            <div class="p-6">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div *ngFor="let curso of usuario.curso">
-                  <p class="text-lg font-semibold"> Curso: </p>
-                  <p class="text-gray-800">{{ curso }}</p>
-                </div>
-              </div>
-            </div>
-          </mat-card>
+          <app-certification-info [usuario]="usuario"
+                                  (actualizarUsuarioEvent)="actualizarUsuario($event)"/>
         </div>
 
-
         <div *ngIf="showInfo.experience" class="w-full h-full">
-          <mat-card class="cd-custom">
-            <div class="p-6">
-            <div class="mb-6" *ngFor="let experiencia of usuario.experiencias">
-              <p class="text-lg font-semibold">Empresa:</p>
-              <p class="text-gray-800"> {{ experiencia.empresa }}</p>
-
-              <p class="text-lg font-semibold">Cargo:</p>
-              <p class="text-gray-800"> {{ experiencia.cargo }}</p>
-
-              <p class="text-lg font-semibold">Fecha:</p>
-              <p class="text-gray-800">{{ experiencia.fechaInicio }} - {{ experiencia.fechaFinalizacion }}</p>
-
-              <p class="text-lg font-semibold">Descripcion:</p>
-              <p class="text-gray-800">{{ experiencia.descripcion }}</p>
-            </div>
-          </div>
-          </mat-card>
+          <app-experience-info [usuario]="usuario" />
         </div>
 
 
         <div *ngIf="showInfo.languages" class="content h-full">
-          <mat-card class="cd-custom ">
-            <div class="p-6">
-              <div class="mb-6" *ngFor="let idioma of usuario.idiomas">
-                <div class="flag flag-en"></div>
-                <p class="text-lg font-semibold">{{ idioma.idioma }}</p>
-                <p class="text-gray-800">Nivel: {{ idioma.nivel }}</p>
-              </div>
-            </div>
-          </mat-card>
+          <app-languages-info [usuario]="usuario"/>
         </div>
 
 

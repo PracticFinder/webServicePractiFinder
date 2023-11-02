@@ -1,0 +1,14 @@
+.cd-custom {
+  background-color: #1F2937;
+  color: #FFFFFF;
+  height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+}
+input[type="text"] {
+  background-color: #1F2937; /* Color de fondo del input para que combine con las tarjetas */
+  color: #FFFFFF; /* Color del texto del input */
+  padding: 10px; /* Espaciado del input */
+  border: 1px solid #FEB543; /* Borde del input */
+  border-radius: 5px; /* Borde redondeado del input */
+}
