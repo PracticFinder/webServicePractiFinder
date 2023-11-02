@@ -23,9 +23,24 @@
       ]
     },
     "curso": [
-      "Curso 1",
-      "Curso 2",
-      "Curso 3"
+      {
+        "nombre": "Mat 1",
+        "institucion": "UPC",
+        "fechaInicio": "Enero 2022",
+        "fechaFinalizacion": "Marzo 2022",
+      },
+      {
+        "nombre": "Biologia 1",
+        "institucion": "UPC",
+        "fechaInicio": "Enero 2022",
+        "fechaFinalizacion": "Marzo 2022",
+      },
+      {
+        "nombre": "Ciencias 1",
+        "institucion": "UPC",
+        "fechaInicio": "Enero 2022",
+        "fechaFinalizacion": "Marzo 2022",
+      }
     ],
     "experiencias": [
       {
