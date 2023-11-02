@@ -1,0 +1,73 @@
+
+
+    <div *ngIf="usuario">
+      <div class="photo-wrapper p-2 ">
+        <img class="w-40 h-40 rounded-full mx-auto border-8 border-custom-yellow" [src]="usuario.imagen" alt="{{ usuario.nombre }}">
+      </div>
+      <div>
+      <ul class="information_table space-x-1">
+        <li class="w-1/2">
+          <ul class="button-list space-y-1 ">
+            <li><button class="btn-custom" (click)="mostrarCategoria('informacionPersonal')">Información Personal</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('conocimientosAptitudes')">Conocimientos y Aptitudes</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('cursos')">Cursos</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('experienciaLaboral')">Experiencia Laboral</button></li>
+            <li><button class="btn-custom" (click)="mostrarCategoria('idiomas')">Idiomas</button></li>
+            <li class="bg-custom-yellow h-full">
+              <div class="fila-botones">
+                <button (click)="rechazarUsuario()">Rechazar</button>
+                <button (click)="aceptarUsuario()">Aceptar</button>
+              </div>
+            </li>
+  
+          </ul>
+        </li>
+        <li class="w-full">
+          <div class="w-full h-full">
+            <mat-card class="cd-custom">
+              <div *ngIf="categoriaSeleccionada === 'informacionPersonal'">
+                <h3>{{ usuario.nombre }}</h3>
+                <p>Edad: {{ usuario.edad }}</p>
+                <p>Teléfono: {{ usuario.telefono }}</p>
+                <p>Dirección: {{ usuario.direccion }}</p>
+                <p>Correo: {{ usuario.correo }}</p>
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'conocimientosAptitudes'">
+                <p>Habilidades Técnicas: {{ usuario.habilidades.tecnicas.join(', ') }}</p>
+                <p>Habilidades Interpersonales: {{ usuario.habilidades.interpersonales.join(', ') }}</p>
+          
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'cursos'">
+                <p>Certificaciones: {{ usuario.habilidades.certificaciones.join(', ') }}</p>
+                <p>Cursos: {{ usuario.curso.join(', ') }}</p>
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'experienciaLaboral'">
+                <h4>Experiencias:</h4>
+                <ul>
+                  <li *ngFor="let experiencia of usuario.experiencias">
+                    <p>Empresa: {{ experiencia.empresa }}</p>
+                    <p>Cargo: {{ experiencia.cargo }}</p>
+                    <p>Fecha de Inicio: {{ experiencia.fechaInicio }}</p>
+                    <p>Fecha de Finalización: {{ experiencia.fechaFinalizacion }}</p>
+                    <p>Descripción: {{ experiencia.descripcion }}</p>
+                  </li>
+                </ul>
+            </div>
+            <div *ngIf="categoriaSeleccionada === 'idiomas'">
+                <h4>Idiomas:</h4>
+                <ul>
+                  <li *ngFor="let idioma of usuario.idiomas">
+                    <p>Idioma: {{ idioma.idioma }}</p>
+                    <p>Nivel: {{ idioma.nivel }}</p>
+                  </li>
+                </ul>
+            </div>
+            </mat-card>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  
