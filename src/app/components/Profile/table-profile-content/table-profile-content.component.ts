@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {UserService} from "../../../services/user.service";
 import { MatDialog } from '@angular/material/dialog';
 import {AddSkillDialogComponent} from "../Sections/SkillSection/add-skill-dialog/add-skill-dialog.component";
+import {PdfService} from '../../../services/Pdf/pdf.service';
 
 @Component({
   selector: 'app-table-profile-content',
@@ -22,7 +23,7 @@ export class TableProfileContentComponent {
 
   longtable: boolean;
 
-  constructor(private usuarioService: UserService, public dialog: MatDialog) {
+  constructor(private usuarioService: UserService, public dialog: MatDialog, private pdfService: PdfService) {
     this.showInfo = {
       personal: true,
       skills: false,
@@ -52,5 +53,8 @@ export class TableProfileContentComponent {
   }
 
 
+  descargarCV() {
+    this.pdfService.generatePdf(this.usuario);
+  }
 
 }

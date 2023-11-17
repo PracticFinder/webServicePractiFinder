@@ -6,6 +6,6 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./profile-content.component.css']
 })
 export class ProfileContentComponent {
-  @Input() usuario: any;
+  @Input() imagen: any;
 
 }
