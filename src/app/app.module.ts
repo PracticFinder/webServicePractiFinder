@@ -42,6 +42,8 @@ import { ExperienceDialogComponent } from './components/Profile/Sections/Experie
 import { LanguagesInfoComponent } from './components/Profile/Sections/LanguagesSection/languages-info/languages-info.component';
 import { LanguageDialogComponent } from './components/Profile/Sections/LanguagesSection/language-dialog/language-dialog.component';
 import {MatSelectModule} from "@angular/material/select";
+import {LoginService} from "./services/Login/login.service";
+import {BaseService} from "./services/base.service";
 
 @NgModule({
   declarations: [
