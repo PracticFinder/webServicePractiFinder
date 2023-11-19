@@ -1,0 +1,60 @@
+<div class="photo-wrapper p-2 flex items-center"  >
+  <a mat-button (click)="retroceder()"><mat-icon class="DateEnd" style=" transform: rotate(180deg);">play_circle_fillede</mat-icon></a>
+  <img class="w-40 h-40 rounded-full mx-auto border-8 border-custom-yellow" [src]="usuario.imagen">
+  <a mat-button ><mat-icon class="DateEnd">play_circle_fillede</mat-icon></a>
+</div>
+
+<div>
+  <ul class="information_table space-x-1">
+    <li class="w-1/2">
+      <ul class="button-list space-y-1 ">
+        <li><button class="btn-custom" (click)="showInformation('personal')">Información Personal</button></li>
+        <li><button class="btn-custom" (click)="showInformation('skills')">Conocimientos y Aptitudes</button></li>
+        <li><button class="btn-custom" (click)="showInformation('courses')">Cursos</button></li>
+        <li><button class="btn-custom" (click)="showInformation('experience')">Experiencia Laboral</button></li>
+        <li><button class="btn-custom" (click)="showInformation('languages')">Idiomas</button></li>
+        <li class="bg-custom-yellow h-full">
+          <div class="bg-custom-yellow flex justify-center items-center p-5">
+            <button class="failed-button">
+              <span>RECHAZAR</span>
+            </button>
+            <button class="aproved-button">
+              <span>ACEPTAR</span>
+            </button>
+          </div>
+        </li>
+
+      </ul>
+    </li>
+
+    <li class="w-full">
+      <div *ngIf="showInfo.personal" class="w-full h-full">
+        <app-personal-info-postulante [usuario]="usuario"/>
+      </div>
+
+      <div *ngIf="showInfo.skills" class="w-full h-full">
+        <app-skill-postulante [usuario]="usuario"/>
+      </div>
+
+
+      <div *ngIf="showInfo.courses" class="w-full h-full">
+        <app-certification-postulante [usuario]="usuario"/>
+      </div>
+
+      <div *ngIf="showInfo.experience" class="w-full h-full">
+        <app-experience-postulante [usuario]="usuario" />
+      </div>
+
+
+      <div *ngIf="showInfo.languages" class="content h-full">
+        <app-language-postulante [usuario]="usuario"/>
+      </div>
+
+
+    </li>
+  </ul>
+
+</div>
+
+
+

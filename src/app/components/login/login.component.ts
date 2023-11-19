@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import {MatSelectModule} from '@angular/material/select';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import { Router } from '@angular/router';
 import {ToolbarService} from "../../services/toolbar.service";
+import {LocalToolbarServiceService} from "../../services/local-toolbar-service.service";
 
 @Component({
   selector: 'app-login',
@@ -14,12 +12,15 @@ export class LoginComponent {
   showSignup() {
     this.router.navigate(['/app-sing-up']);
   }
-  constructor(private router: Router, private toolbarService: ToolbarService) {}
+  constructor(private router: Router, private toolbarService: ToolbarService, private localService: LocalToolbarServiceService) {}
 
   ngOnInit(): void {
-    this.cambiarVisibilidadToolbar(true);
+    this.cambiarVisibilidadToolbar(true, false);
   }
-  cambiarVisibilidadToolbar(nuevoValor: boolean) {
+
+  cambiarVisibilidadToolbar(nuevoValor: boolean, studentValue: boolean) {
+    this.localService.guardarMostrarbarStudent(studentValue);
+    this.toolbarService.toggleMonstrarbarStudent(studentValue);
     this.toolbarService.toggleMostrarToolbar(nuevoValor);
   }
 
@@ -28,6 +29,6 @@ export class LoginComponent {
     this.router.navigate(['/inicio']);
   }
   irHomeReclutador() {
-    this.router.navigate(['/inicio']);
+    this.router.navigate(['/inicio-business']);
   }
 }
