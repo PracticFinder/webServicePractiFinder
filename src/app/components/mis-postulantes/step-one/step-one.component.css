@@ -1,0 +1,59 @@
+.Title{
+  font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center;
+  color: #FEB543;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.button-container {
+  display: flex; /* Usa flexbox para organizar los botones */
+  gap: 30px; /* Define el espacio entre los botones */
+  color: white;
+}
+.filtros-button {
+  display: flex;
+  align-items: center;
+  background-color: #FEB543;
+  width: auto;
+  margin: auto;
+  height: auto;
+  font-size: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+.contenedor {
+  background-color: black;
+  margin: auto;
+  padding-top: 30px;
+  width: 80%;
+
+  border: 5px solid white;
+}
+
+.perfil-button{
+  display: flex;
+  align-items: center;
+  background-color: #FEB543;
+  width: auto;
+  margin: auto;
+  height: auto;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+.Icono-Perfil{
+  width: 150px; height: auto; border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  border: 8px solid #FEB543;
+
+}

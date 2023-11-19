@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import {BusinessService} from "../../services/business.service";
+import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  selector: 'app-mis-postulantes',
+  templateUrl: './mis-postulantes.component.html',
+  styleUrls: ['./mis-postulantes.component.css']
 })
-export class InicioComponent {
+export class MisPostulantesComponent {
   filters: any = {
     global: { value: null},
     search: "Ingresa el nombre de la empresa"
@@ -18,14 +19,17 @@ export class InicioComponent {
   empresa: boolean=true;
 
   ofertas: any;
-
-  constructor(private businessService: BusinessService) {
+  constructor(private businessService: BusinessService, private router: Router) {
   }
 
   ngOnInit(){
     this.businessService.getBusiness().subscribe((data: any) => {
       this.ofertas = data;
     });
+  }
+
+  abrirDetalleOferta(data: any): void {
+    this.router.navigate(['/step-one'], { state: { ofertaData: data } });
   }
 
   matchesFilter(name_a: string,name_u: string,name_s: number,name_e: string) {
@@ -80,11 +84,4 @@ export class InicioComponent {
     this.filters.search= "Ingresa el nombre de la empresa";
   }
 
-  onMore(data: any){
-
-    for (const oferta of this.ofertas) {
-      oferta.More=false;
-    }
-    data.More=true;
-  }
 }

@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import {BusinessService} from "../../services/business.service";
+import {CreateDialogComponent} from "./create-dialog/create-dialog.component";
+import {MatDialog} from "@angular/material/dialog";
+import {EditBusinessDialogComponent} from "./edit-business-dialog/edit-business-dialog.component";
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  selector: 'app-inicio-business',
+  templateUrl: './inicio-business.component.html',
+  styleUrls: ['./inicio-business.component.css']
 })
-export class InicioComponent {
+export class InicioBusinessComponent {
   filters: any = {
     global: { value: null},
     search: "Ingresa el nombre de la empresa"
@@ -18,14 +21,49 @@ export class InicioComponent {
   empresa: boolean=true;
 
   ofertas: any;
-
-  constructor(private businessService: BusinessService) {
+  constructor(private businessService: BusinessService, public dialog: MatDialog) {
   }
 
   ngOnInit(){
     this.businessService.getBusiness().subscribe((data: any) => {
       this.ofertas = data;
     });
+  }
+
+  openCreateDialog(valor:any): void {
+    const dialogRef = this.dialog.open(CreateDialogComponent, {
+      width: '400px', // ajusta según sea necesario
+      data: {
+        valor: valor  // Aquí pasas tu parámetro valor al componente de diálogo
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      // result contendrá los datos enviados desde el cuadro de diálogo
+      console.log('The dialog was closed', result);
+    });
+  }
+
+  openEditBusinessDialog(valor:any): void {
+    const dialogRef = this.dialog.open(EditBusinessDialogComponent, {
+      width: '400px', // ajusta según sea necesario
+      data: {
+        valoor: valor,  // Aquí pasas tu parámetro valor al componente de diálogo
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      // result contendrá los datos enviados desde el cuadro de diálogo
+      console.log('The dialog was closed', result);
+    });
+  }
+
+  onDeleteBusiness(id: number): void {
+    this.businessService.deleteBusiness(id).subscribe(response => {
+      console.error('Empresa eliminada correctamente');
+      }, error => {
+        console.error('Error al eliminar la empresa', error);
+      });
   }
 
   matchesFilter(name_a: string,name_u: string,name_s: number,name_e: string) {
@@ -87,4 +125,6 @@ export class InicioComponent {
     }
     data.More=true;
   }
+
+  protected readonly open = open;
 }

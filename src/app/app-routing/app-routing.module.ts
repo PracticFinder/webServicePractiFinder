@@ -10,6 +10,10 @@ import {ProfileComponent} from "../components/Profile/profile.component";
 import {LoginComponent} from "../components/login/login.component";
 import {SignUpComponent} from "../components/sign-up/sign-up.component";
 import {RememberPasswordComponent} from "../components/remember-password/remember-password.component";
+import {InicioBusinessComponent} from "../components/inicio-business/inicio-business.component";
+import {MisPostulantesComponent} from "../components/mis-postulantes/mis-postulantes.component";
+import {StepOneComponent} from "../components/mis-postulantes/step-one/step-one.component";
+import {ViewPostulanteComponent} from "../components/mis-postulantes/view-postulante/view-postulante.component";
 
 const routes: Routes =[
   {
@@ -22,7 +26,11 @@ const routes: Routes =[
     path: 'app-remember-password', component: RememberPasswordComponent
   },
   {path: 'inicio', component: InicioComponent},
+  {path: 'inicio-business', component: InicioBusinessComponent},
   {path: 'mis-postulaciones', component: MisPostulacionesComponent},
+  {path: 'mis-postulantes', component: MisPostulantesComponent},
+  {path: 'step-one', component: StepOneComponent},
+  {path: 'view-postulante', component: ViewPostulanteComponent},
   {path: 'soporte', component: SoporteComponent},
   {path: 'notificaciones', component: NotificacionesComponent},
   {path: 'messages', component: ChatBoxComponent},

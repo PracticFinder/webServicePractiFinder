@@ -1,0 +1,17 @@
+<div>
+  <div class="Title">
+    <p> ETAPA 1</p>
+  </div>
+  <div style="font-family: 'Poppins', sans-serif; padding-top: 60px;" >
+    <div class="contenedor">
+      <div *ngFor="let postulante of ofertaData.postulantes">
+        <img [src]="postulante.imagen" alt="Imagen del postulante" class="Icono-Perfil">
+        <button class="perfil-button" mat-button (click)="showUsuario(postulante)">Ver Perfil</button>
+      </div>
+    </div>
+  </div>
+  <div class="button-container" style="font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center; padding: 20px 10px 0px 10px;">
+    <button class="filtros-button" mat-button (click)="postulantes()">FINALIZAR PROCESO</button>
+    <button class="filtros-button" mat-button >SIGUIENTE ETAPA</button>
+  </div>
+</div>

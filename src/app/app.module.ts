@@ -42,6 +42,21 @@ import { ExperienceDialogComponent } from './components/Profile/Sections/Experie
 import { LanguagesInfoComponent } from './components/Profile/Sections/LanguagesSection/languages-info/languages-info.component';
 import { LanguageDialogComponent } from './components/Profile/Sections/LanguagesSection/language-dialog/language-dialog.component';
 import {MatSelectModule} from "@angular/material/select";
+import { MisPostulantesComponent } from './components/mis-postulantes/mis-postulantes.component';
+import {InicioBusinessComponent} from "./components/inicio-business/inicio-business.component";
+import {UserService} from "./services/user.service";
+import {BusinessService} from "./services/business.service";
+import { CreateDialogComponent } from './components/inicio-business/create-dialog/create-dialog.component';
+import { EditBusinessDialogComponent } from './components/inicio-business/edit-business-dialog/edit-business-dialog.component';
+import { StepOneComponent } from './components/mis-postulantes/step-one/step-one.component';
+import { ViewPostulanteComponent } from './components/mis-postulantes/view-postulante/view-postulante.component';
+import { ProfilePostulanteComponent } from './components/mis-postulantes/view-postulante/profile-postulante/profile-postulante.component';
+import { TablePostulanteContentComponent } from './components/mis-postulantes/view-postulante/table-postulante-content/table-postulante-content.component';
+import { CertificationPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/certification-postulante/certification-postulante.component';
+import { ExperiencePostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/experience-postulante/experience-postulante.component';
+import { LanguagePostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/language-postulante/language-postulante.component';
+import { PersonalInfoPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/personal-info-postulante/personal-info-postulante.component';
+import { SkillPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/skill-postulante/skill-postulante.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +81,19 @@ import {MatSelectModule} from "@angular/material/select";
     ExperienceDialogComponent,
     LanguagesInfoComponent,
     LanguageDialogComponent,
+    InicioBusinessComponent,
+    MisPostulantesComponent,
+    CreateDialogComponent,
+    EditBusinessDialogComponent,
+    StepOneComponent,
+    ViewPostulanteComponent,
+    ProfilePostulanteComponent,
+    TablePostulanteContentComponent,
+    CertificationPostulanteComponent,
+    ExperiencePostulanteComponent,
+    LanguagePostulanteComponent,
+    PersonalInfoPostulanteComponent,
+    SkillPostulanteComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -90,7 +118,7 @@ import {MatSelectModule} from "@angular/material/select";
     MatSelectModule
 
   ],
-  providers: [ToolbarService, LocalToolbarServiceService],
+  providers: [ToolbarService, LocalToolbarServiceService, UserService, BusinessService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

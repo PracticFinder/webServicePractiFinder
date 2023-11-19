@@ -7,8 +7,9 @@ import {LocalToolbarServiceService} from "./services/local-toolbar-service.servi
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  mostrarToolbar: boolean = false;
+export class AppComponent implements OnInit{
+  mostrarToolbar: boolean = true;
+  barStudent: boolean = false;
 
   title = 'BUsquedaPractifinder';
 
@@ -17,6 +18,13 @@ export class AppComponent {
     {path:'/mis-postulaciones',title:'MIS POSTULACIONES'},
     {path:'/soporte',title:'SOPORTE'},
   ];
+
+  optionsEmployer =[
+    {path:'/inicio-business',title:'INICIO'},
+    {path:'/mis-postulantes',title:'MIS POSTULANTES'},
+    {path:'/soporte',title:'SOPORTE'},
+  ];
+
   boottons =[
     {path:'/notificaciones',title:'notifications'},
     {path:'/messages',title:'comment'},
@@ -27,14 +35,21 @@ export class AppComponent {
     this.toolbarService.mostrarToolbar$.subscribe(value => {
       this.mostrarToolbar = value;
     });
+
+    this.toolbarService.barStudent$.subscribe(value2 => {
+      this.barStudent = value2;
+    })
   }
+
 
   ngOnInit(): void {
     this.mostrarToolbar = this.localservice.obtenerMostrarToolbar();
+    this.barStudent = this.localservice.obtenerMostrarbarStudent();
+    console.log(localStorage.getItem('barStudent'));
   }
 
-  cambiarMostrarToolbar() {
-    this.mostrarToolbar = !this.mostrarToolbar;
-    this.localservice.guardarMostrarToolbar(this.mostrarToolbar);
-  }
+  //cambiarMostrarToolbar() {
+  //  this.mostrarToolbar = !this.mostrarToolbar;
+  //  this.localservice.guardarMostrarToolbar(this.mostrarToolbar);
+  //}
 }
