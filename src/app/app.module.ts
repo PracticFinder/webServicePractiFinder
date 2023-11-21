@@ -11,8 +11,6 @@ import {MatIconModule} from "@angular/material/icon";
 import { InicioComponent } from './components/inicio/inicio.component';
 import { MisPostulacionesComponent } from './components/mis-postulaciones/mis-postulaciones.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
-import { NotificacionesComponent } from './components/notificaciones/notificaciones.component';
-import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import {RouterOutlet} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
@@ -57,6 +55,8 @@ import { ExperiencePostulanteComponent } from './components/mis-postulantes/view
 import { LanguagePostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/language-postulante/language-postulante.component';
 import { PersonalInfoPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/personal-info-postulante/personal-info-postulante.component';
 import { SkillPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/skill-postulante/skill-postulante.component';
+import {LoginService} from "./services/Login/login.service";
+import {BaseService} from "./services/base.service";
 
 @NgModule({
   declarations: [
@@ -64,8 +64,6 @@ import { SkillPostulanteComponent } from './components/mis-postulantes/view-post
     InicioComponent,
     MisPostulacionesComponent,
     SoporteComponent,
-    NotificacionesComponent,
-    ChatBoxComponent,
     ProfileComponent,
     TableProfileContentComponent,
     LoginComponent,
@@ -118,7 +116,7 @@ import { SkillPostulanteComponent } from './components/mis-postulantes/view-post
     MatSelectModule
 
   ],
-  providers: [ToolbarService, LocalToolbarServiceService, UserService, BusinessService],
+  providers: [ToolbarService, LocalToolbarServiceService, UserService, BusinessService, LoginService, BaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
