@@ -8,6 +8,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class ViewPostulanteComponent implements OnInit{
   usuario: any;
+  ofertaData: any;
 
   constructor(private route: ActivatedRoute, private router: Router) {
   }
@@ -16,6 +17,9 @@ export class ViewPostulanteComponent implements OnInit{
     const navigation = window.history.state;
     if (navigation && navigation.user) {
       this.usuario = navigation.user;
+    }
+    if (navigation && navigation.ofertadata) {
+      this.ofertaData = navigation.ofertadata;
     }
   }
 

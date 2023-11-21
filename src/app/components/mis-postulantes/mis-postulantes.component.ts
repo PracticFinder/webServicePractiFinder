@@ -29,7 +29,11 @@ export class MisPostulantesComponent {
   }
 
   abrirDetalleOferta(data: any): void {
-    this.router.navigate(['/step-one'], { state: { ofertaData: data } });
+    this.router.navigate(['/step-one'], {
+      state: {
+        ofertaData: data
+      }
+    });
   }
 
   matchesFilter(name_a: string,name_u: string,name_s: number,name_e: string) {

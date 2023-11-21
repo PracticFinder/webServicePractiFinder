@@ -4,23 +4,23 @@
 
 </div>
 
-<div class="button-container" style="font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center; padding: 20px 10px 0px 10px;">
+<div class="button-container" style="font-family: 'Poppins', sans-serif;display: flex; justify-content: center; align-items: center; padding: 20px 10px 60px 10px;">
   <button class="filtros-button" mat-button (click)="onAREA()">AREA</button>
   <button class="filtros-button" mat-button (click)="onUBICACION()">UBICACION</button>
   <button class="filtros-button" mat-button (click)="onSALARIO()">SALARIO</button>
   <button class="filtros-button" mat-button (click)="onEMPRESA()">EMPRESA</button>
 </div>
 
-<div style="font-family: 'Poppins', sans-serif; padding-top: 60px;" >
-  <div class="contenedor">
-    <ng-container *ngFor="let data of ofertas">
-      <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,data.Empresa)" class="cards-bordes">
+<div class="contenedor" style="font-family: 'Poppins', sans-serif;" >
+  <div *ngFor="let oferta of ofertas">
+    <ng-container *ngFor="let data of oferta.postulaciones">
+      <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,oferta.Empresa)" class="cards-bordes">
         <div class="Content" (click)="abrirDetalleOferta(data)">
           <div >
-            <img [src]="data.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
+            <img [src]="oferta.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
           </div>
           <div style="padding-top: 20px; margin: auto">
-            <a>{{data.Empresa}}</a><br>
+            <a>{{oferta.Empresa}}</a><br>
             <a>Ubicacion: {{data.Ubicacion}}</a><br>
             <a>{{data.Descripcion}}</a>
           </div>

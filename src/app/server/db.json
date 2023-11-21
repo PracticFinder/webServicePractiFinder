@@ -64,1879 +64,2183 @@
   "empresas": [
     {
       "id": 1,
-      "Titulo": "Jefe de sistemas",
-      "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento. En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento.",
-      "Fecha_inicio": "20-09-2023",
-      "Fecha_fin": "30-09-2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo1. Comandar un equipo pequeño",
-      "Beneficios": "1. Salario: 1500 soles\n2. Seguro de Salud",
-      "More": false,
-      "UrlImage": "https://tentulogo.com/wp-content/uploads/2017/08/ibm-logo.jpg",
       "Empresa": "International Business Machines",
-      "Area": "Educacion",
-      "Ubicacion": "La Molina",
-      "Salario": 1500,
-      "postulantes": [
+      "UrlImage": "https://tentulogo.com/wp-content/uploads/2017/08/ibm-logo.jpg",
+      "postulaciones": [
         {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
+          "id": 1,
+          "Titulo": "Jefe de sistemas",
+          "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento. En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento.",
+          "Fecha_inicio": "20-09-2023",
+          "Fecha_fin": "30-09-2023",
+          "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo1. Comandar un equipo pequeño",
+          "Beneficios": "1. Salario: 1500 soles\n2. Seguro de Salud",
+          "More": false,
+          "Area": "Educacion",
+          "Ubicacion": "La Molina",
+          "Salario": 1500,
+          "postulantes": [
             {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          ]
         }
       ]
     },
     {
       "id": 2,
-      "Titulo": "Jefe de visores",
-      "Descripcion": "En la comapnia se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento. En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento.",
-      "Fecha_inicio": " 21 de noviembre del 2023",
-      "Fecha_fin": " 30 de noviembre del 2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo1. Comandar un equipo pequeño",
-      "Beneficios": "1. Salario: 1500 soles\n2. Seguro de Salud",
-      "More": false,
-      "UrlImage": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Interbank_logo.svg",
       "Empresa": "Interbank",
-      "Area": "Contabilidad",
-      "Ubicacion": "Barranco",
-      "Salario": 2510
+      "UrlImage": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Interbank_logo.svg",
+      "postulaciones": [
+        {
+          "id": 2,
+          "Titulo": "Jefe de Visores",
+          "Descripcion": "En la compania se requieren practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento. En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento.",
+          "Fecha_inicio": " 23 de noviembre del 2023",
+          "Fecha_fin": " 29 de noviembre del 2023",
+          "Requisitos": "1. Tener un par de habilidades en Figma2. Conociminetos básticos en Excel3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño2. Brindar apoyo en el área de tecnología3. Organizar tareas del equipo1. Comandar un equipo pequeño",
+          "Beneficios": "1. Salario: 2500 soles2. Seguro de Salud",
+          "More": false,
+          "Area": "Contabilidad",
+          "Ubicacion": "Mirador De los Soles",
+          "Salario": "2500",
+          "postulantes": [
+            {
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 3,
-      "Titulo": "Jefe de sistemas",
-      "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
-      "Fecha_inicio": "20-09-2023",
-      "Fecha_fin": "30-09-2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
-      "Beneficios": "1. Salario: 1000 soles\n2. Seguro de Salud",
-      "More": false,
       "UrlImage": "https://logovtor.com/wp-content/uploads/2020/03/banco-de-credito-del-peru-bcp-logo-vector.png",
       "Empresa": "Banco de Credito del Peru",
-      "Area": "Ingenieria",
-      "Ubicacion": "San Isidro",
-      "Salario": 1000,
-      "postulantes": [
+      "postulaciones": [
         {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
+          "id": 3,
+          "Titulo": "Jefe de sistemas",
+          "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
+          "Fecha_inicio": "20-09-2023",
+          "Fecha_fin": "30-09-2023",
+          "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
+          "Beneficios": "1. Salario: 1000 soles\n2. Seguro de Salud",
+          "More": false,
+          "Area": "Ingenieria",
+          "Ubicacion": "San Isidro",
+          "Salario": 1000,
+          "postulantes": [
             {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          ]
         }
       ]
     },
     {
       "id": 4,
-      "Titulo": "Jefe de sistemas",
-      "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
-      "Fecha_inicio": "20-09-2023",
-      "Fecha_fin": "30-09-2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
-      "Beneficios": "1. Salario: 2130 soles\n2. Seguro de Salud",
-      "More": false,
       "UrlImage": "http://2.bp.blogspot.com/-ChNKsuSHqhk/UifbgEHoZ0I/AAAAAAAAAE8/kU2JPfw9tp8/s1600/backus.jpg",
       "Empresa": "Backus AB InBev",
-      "Area": "Arquitectura",
-      "Ubicacion": "Santa Anita",
-      "Salario": 2130,
-      "postulantes": [
+      "postulaciones": [
         {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
+          "id": 4,
+          "Titulo": "Jefe de sistemas",
+          "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
+          "Fecha_inicio": "20-09-2023",
+          "Fecha_fin": "30-09-2023",
+          "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
+          "Beneficios": "1. Salario: 2130 soles\n2. Seguro de Salud",
+          "More": false,
+          "Area": "Arquitectura",
+          "Ubicacion": "Santa Anita",
+          "Salario": 2130,
+          "postulantes": [
             {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          ]
         }
       ]
     },
     {
       "id": 5,
-      "Titulo": "Jefe de sistemas",
-      "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
-      "Fecha_inicio": "20-09-2023",
-      "Fecha_fin": "30-09-2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
-      "Beneficios": "1. Salario: 3100 soles\n2. Seguro de Salud",
-      "More": false,
       "UrlImage": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Alicorp.svg",
       "Empresa": "Alicorp",
-      "Area": "Ingenieria",
-      "Ubicacion": "Callao",
-      "Salario": 3100,
-      "postulantes": [
+      "postulaciones": [
         {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
+          "id": 5,
+          "Titulo": "Jefe de sistemas",
+          "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
+          "Fecha_inicio": "20-09-2023",
+          "Fecha_fin": "30-09-2023",
+          "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
+          "Beneficios": "1. Salario: 3100 soles\n2. Seguro de Salud",
+          "More": false,
+          "Area": "Ingenieria",
+          "Ubicacion": "Callao",
+          "Salario": 3100,
+          "postulantes": [
             {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          ]
         }
       ]
     },
     {
       "id": 6,
-      "Titulo": "Jefe de sistemas",
-      "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
-      "Fecha_inicio": "20-09-2023",
-      "Fecha_fin": "30-09-2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
-      "Beneficios": "1. Salario: 2400 soles\n2. Seguro de Salud",
-      "More": false,
       "UrlImage": "https://upload.wikimedia.org/wikipedia/commons/7/70/Logotipo_de_BBVA.svg",
       "Empresa": "Banco Bilbao Vizcaya Argentaria",
-      "Area": "Administracion",
-      "Ubicacion": "San Isidro",
-      "Salario": 2400,
-      "postulantes": [
+      "postulaciones": [
         {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
+          "id": 6,
+          "Titulo": "Jefe de sistemas",
+          "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
+          "Fecha_inicio": "20-09-2023",
+          "Fecha_fin": "30-09-2023",
+          "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
+          "Beneficios": "1. Salario: 2400 soles\n2. Seguro de Salud",
+          "More": false,
+          "Area": "Administracion",
+          "Ubicacion": "San Isidro",
+          "Salario": 2400,
+          "postulantes": [
             {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          ]
         }
       ]
     },
     {
       "id": 7,
-      "Titulo": "Jefe de sistemas",
-      "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
-      "Fecha_inicio": "20-09-2023",
-      "Fecha_fin": "30-09-2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
-      "Beneficios": "1. Salario: 1230 soles\n2. Seguro de Salud",
-      "More": false,
       "UrlImage": "https://proactivo.com.pe/wp-content/uploads/2014/09/logo_FerreyrosCAT.jpg",
       "Empresa": "Ferreyros",
-      "Area": "Ingenieria",
-      "Ubicacion": "San Isidro",
-      "Salario": 1230,
-      "postulantes": [
+      "postulaciones": [
         {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
+          "id": 7,
+          "Titulo": "Jefe de sistemas",
+          "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
+          "Fecha_inicio": "20-09-2023",
+          "Fecha_fin": "30-09-2023",
+          "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
+          "Beneficios": "1. Salario: 1230 soles\n2. Seguro de Salud",
+          "More": false,
+          "Area": "Ingenieria",
+          "Ubicacion": "San Isidro",
+          "Salario": 1230,
+          "postulantes": [
             {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          ]
         }
       ]
     },
     {
       "id": 8,
-      "Titulo": "Jefe de sistemas",
-      "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
-      "Fecha_inicio": "20-09-2023",
-      "Fecha_fin": "30-09-2023",
-      "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
-      "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
-      "Beneficios": "1. Salario: 2350 soles\n2. Seguro de Salud",
-      "More": false,
       "UrlImage": "https://orionscccom.files.wordpress.com/2021/11/d3173-nestlc3a9-logo.png",
       "Empresa": "Nestle",
-      "Area": "Contabilidad",
-      "Ubicacion": "Callao",
-      "Salario": 2350,
-      "postulantes": [
+      "postulaciones": [
         {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
+          "id": 8,
+          "Titulo": "Jefe de sistemas",
+          "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento",
+          "Fecha_inicio": "20-09-2023",
+          "Fecha_fin": "30-09-2023",
+          "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
+          "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo",
+          "Beneficios": "1. Salario: 2350 soles\n2. Seguro de Salud",
+          "More": false,
+          "Area": "Contabilidad",
+          "Ubicacion": "Callao",
+          "Salario": 2350,
+          "postulantes": [
             {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             },
             {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Camila Callata",
+              "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+              "edad": "20",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          ]
         },
         {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Jesus Espinoza",
-          "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
-          "edad": "23",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
-        },
-        {
-          "nombre": "Camila Callata",
-          "imagen": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
-          "edad": "20",
-          "telefono": "+51 921 123 123",
-          "direccion": "Urb. Santa `M",
-          "habilidades": {
-            "tecnicas": [
-              "C++",
-              "Python",
-              "Office",
-              "Angular",
-              "SpringBoot"
-            ],
-            "interpersonales": [
-              "Compañerismo",
-              "Liderazgo",
-              "Trabajo en Equipo"
-            ]
-          },
-          "certificaciones": [
-            {
-              "nombre": "Mat 1",
-              "nombreInstitucion": "Mat 1",
-              "fechaObtencion": "10/20/2023"
-            },
-            {
-              "nombre": "asd",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": "el 1 de noviembre del 2023"
-            },
-            {
-              "nombre": "sad",
-              "nombreInstitucion": "asd",
-              "fechaObtencion": " 1 de noviembre del 2023"
-            }
-          ],
-          "experiencias": [
-            {
-              "empresa": "Google",
-              "cargo": "Ingeniero de Software",
-              "fechaInicio": " 9 de marzo del 2017",
-              "fechaFinalizacion": " 4 de noviembre del 2021",
-              "descripcion": "Trabaje como Ingeniero de Software"
-            }
-          ],
-          "idiomas": [
-            {
-              "nivel": "Avanzado",
-              "idioma": "Ingles"
-            },
-            {
-              "nivel": "Nativo",
-              "idioma": "Español"
-            },
-            {
-              "nivel": "Intermedio",
-              "idioma": "Italiano"
-            }
-          ],
-          "correo": "jesusespinoza@gmail.com"
+          "Titulo": "b",
+          "Descripcion": "b",
+          "Fecha_inicio": " 28 de noviembre del 2023",
+          "Fecha_fin": " 30 de noviembre del 2023",
+          "Requisitos": "b",
+          "Funciones": "b",
+          "Beneficios": "b",
+          "More": false,
+          "Area": "b",
+          "Ubicacion": "b",
+          "Salario": "900",
+          "postulantes": []
         }
       ]
     }

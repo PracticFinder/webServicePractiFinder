@@ -2,11 +2,11 @@
 <div mat-dialog-content>
   <form [formGroup]="newForm">
     <mat-form-field>
-      <input matInput placeholder="Titulo" formControlName="Titulo">
-      <mat-error *ngIf="newForm.controls['Titulo'].hasError('required')">
-        Campo requerido
-      </mat-error>
-    </mat-form-field>
+    <input matInput placeholder="Titulo" formControlName="Titulo">
+    <mat-error *ngIf="newForm.controls['Titulo'].hasError('required')">
+      Campo requerido
+    </mat-error>
+  </mat-form-field>
     <mat-form-field>
       <input matInput placeholder="Descripcion" formControlName="Descripcion">
       <mat-error *ngIf="newForm.controls['Descripcion'].hasError('required')">

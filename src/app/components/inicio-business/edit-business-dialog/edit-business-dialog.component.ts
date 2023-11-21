@@ -19,8 +19,6 @@ export class EditBusinessDialogComponent {
   requisitos: any;
   funciones:any;
   beneficios:any;
-  urlimage:any;
-  eempresa:any;
   area:any;
   ubicacion:any;
   salario:any;
@@ -41,12 +39,10 @@ export class EditBusinessDialogComponent {
       Funciones: [data.valoor.Funciones, Validators.required],
       Beneficios: [data.valoor.Beneficios, Validators.required],
       More: [false],
-      UrlImage: [data.valoor.UrlImage, Validators.required],
-      Empresa: [data.valoor.Empresa, Validators.required],
       Area: [data.valoor.Area, Validators.required],
       Ubicacion: [data.valoor.Ubicacion, Validators.required],
       Salario: [data.valoor.Salario, Validators.required],
-      Postulantes: [[]],
+      postulantes: [data.valoor.postulantes],
     });
 
     this.titulo = data.valoor.Titulo;
@@ -56,8 +52,6 @@ export class EditBusinessDialogComponent {
     this.requisitos= data.valoor.Requisitos;
     this.funciones= data.valoor.Funciones;
     this.beneficios= data.valoor.Beneficios;
-    this.urlimage= data.valoor.UrlImage;
-    this.eempresa= data.valoor.Empresa;
     this.area= data.valoor.Area;
     this.ubicacion= data.valoor.Ubicacion;
     this.salario= data.valoor.Salario;
@@ -73,9 +67,11 @@ export class EditBusinessDialogComponent {
     nuevaCertificacion.Fecha_inicio = this.formatDate(nuevaCertificacion.Fecha_inicio);
     nuevaCertificacion.Fecha_fin = this.formatDate(nuevaCertificacion.Fecha_fin);
     nuevaCertificacion.id = this.data.valoor.id;
-    nuevaCertificacion.Postulantes = this.data.valoor.Postulantes;
 
-    this.businessService.updateBusiness(this.data.valoor.id ,nuevaCertificacion)
+
+    this.data.business.postulaciones[this.data.position] = nuevaCertificacion //actualizar la postulacion
+
+    this.businessService.updateBusiness(this.data.business.id, this.data.business)
       .subscribe(response => {
         console.log('Empresa actualizada exitosamente', response);
         this.dialogRef.close(response); // Puedes cerrar el cuadro de diálogo si la operación es exitosa

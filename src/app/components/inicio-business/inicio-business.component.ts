@@ -30,6 +30,7 @@ export class InicioBusinessComponent {
     });
   }
 
+  //POST
   openCreateDialog(valor:any): void {
     const dialogRef = this.dialog.open(CreateDialogComponent, {
       width: '400px', // ajusta según sea necesario
@@ -44,11 +45,14 @@ export class InicioBusinessComponent {
     });
   }
 
-  openEditBusinessDialog(valor:any): void {
+  //UPDATE
+  openEditBusinessDialog(valor:any, busines:any, pos:number): void {
     const dialogRef = this.dialog.open(EditBusinessDialogComponent, {
       width: '400px', // ajusta según sea necesario
       data: {
-        valoor: valor,  // Aquí pasas tu parámetro valor al componente de diálogo
+        valoor: valor,
+        position: pos,
+        business: busines// Aquí pasas tu parámetro valor al componente de diálogo
       }
     });
 
@@ -57,13 +61,24 @@ export class InicioBusinessComponent {
       console.log('The dialog was closed', result);
     });
   }
+  //DELTE
+  onDeleteBusiness(idBusiness: number, pos: number): void {
+    var newPostulaciones:any;
 
-  onDeleteBusiness(id: number): void {
-    this.businessService.deleteBusiness(id).subscribe(response => {
+    for (var business of this.ofertas) {
+      if(business.id == idBusiness){
+        newPostulaciones = business.postulaciones;
+        newPostulaciones.splice(pos, 1);
+      }
+    }
+
+    this.ofertas[idBusiness-1].postulaciones = newPostulaciones;
+
+    this.businessService.updateBusiness(idBusiness,this.ofertas[idBusiness-1]).subscribe(response=>{
       console.error('Empresa eliminada correctamente');
-      }, error => {
-        console.error('Error al eliminar la empresa', error);
-      });
+    }, error => {
+      console.error('Error al eliminar la empresa', error);
+    });
   }
 
   matchesFilter(name_a: string,name_u: string,name_s: number,name_e: string) {

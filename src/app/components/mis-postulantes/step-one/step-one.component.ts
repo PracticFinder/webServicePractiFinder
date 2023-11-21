@@ -24,6 +24,11 @@ export class StepOneComponent  implements OnInit{
   }
 
   showUsuario(data: any): void{
-    this.router.navigate(['/view-postulante'], { state: { user: data } });
+    this.router.navigate(['/view-postulante'], {
+      state: {
+        user: data,
+        ofertadata: this.ofertaData
+      }
+    });
   }
 }
