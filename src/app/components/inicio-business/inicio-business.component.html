@@ -14,26 +14,28 @@
 <div style="font-family: 'Poppins', sans-serif; padding-top: 60px;" >
   <div class="contenedor">
     <div style="display: flex; justify-content: right;">
-      <a mat-button (click)="openCreateDialog(ofertas.length)"><mat-icon class="Add">add_circle_outline</mat-icon></a>
+      <a mat-button (click)="openCreateDialog(ofertas)"><mat-icon class="Add">add_circle_outline</mat-icon></a>
     </div>
-    <ng-container *ngFor="let data of ofertas">
-      <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,data.Empresa)" class="cards-bordes">
+    <div *ngFor="let oferta of ofertas">
+    <ng-container *ngFor="let data of oferta.postulaciones; let i = index">
+      <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,oferta.Empresa)" class="cards-bordes">
         <div class="Content">
           <div >
-            <img [src]="data.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
+            <img [src]="oferta.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
           </div>
           <div style="padding-top: 20px; margin: auto">
-            <a>{{data.Empresa}}</a><br>
+            <a>{{oferta.Empresa}}</a><br>
             <a>Ubicacion: {{data.Ubicacion}}</a><br>
             <a>{{data.Descripcion}}</a>
           </div>
           <div class="DateEnd" >
-            <a mat-button (click)="openEditBusinessDialog(data)" ><mat-icon >create</mat-icon></a>
-            <a  mat-button (click)="onDeleteBusiness(data.id)" ><mat-icon>delete</mat-icon></a>
+            <a mat-button (click)="openEditBusinessDialog(data, oferta,i)" ><mat-icon >create</mat-icon></a>
+            <a  mat-button (click)="onDeleteBusiness(oferta.id,i)" ><mat-icon>delete</mat-icon></a>
           </div>
         </div>
 
       </mat-card>
     </ng-container>
+    </div>
   </div>
 </div>

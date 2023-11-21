@@ -171,8 +171,8 @@
 .contenedor {
   background-color: black;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 60px;
   width: 80%;
-
+  font-family: 'Poppins', sans-serif;
   border: 5px solid white;
 }

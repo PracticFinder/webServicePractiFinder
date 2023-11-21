@@ -4,7 +4,7 @@
   </div>
   <div style="font-family: 'Poppins', sans-serif; padding-top: 60px;" >
     <div class="contenedor">
-      <div *ngFor="let postulante of ofertaData.postulantes">
+      <div *ngFor="let postulante of ofertaData.postulantes" class="contenedor-item">
         <img [src]="postulante.imagen" alt="Imagen del postulante" class="Icono-Perfil">
         <button class="perfil-button" mat-button (click)="showUsuario(postulante)">Ver Perfil</button>
       </div>

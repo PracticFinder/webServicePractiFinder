@@ -29,8 +29,17 @@
   margin: auto;
   padding-top: 30px;
   width: 80%;
-
   border: 5px solid white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contenedor-item {
+  width: calc(20% - 20px); /* 20% para mostrar 5 elementos por fila, ajusta según sea necesario */
+  margin: 10px;
+  text-align: center;
 }
 
 .perfil-button{
