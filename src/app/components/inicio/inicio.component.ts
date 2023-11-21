@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {BusinessService} from "../../services/business.service";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-inicio',
@@ -7,6 +8,7 @@ import {BusinessService} from "../../services/business.service";
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
+  usuario:any
   filters: any = {
     global: { value: null},
     search: "Ingresa el nombre de la empresa"
@@ -19,13 +21,27 @@ export class InicioComponent {
 
   ofertas: any;
 
-  constructor(private businessService: BusinessService) {
+  constructor(private businessService: BusinessService, private userService: UserService) {
   }
 
   ngOnInit(){
     this.businessService.getBusiness().subscribe((data: any) => {
       this.ofertas = data;
     });
+    this.userService.getUsuario().subscribe((data: any) => {
+      this.usuario = data;
+    });
+  }
+
+  // necesito el BusinessId, posicion de Postulaciones
+  addedToPostulantes(businessId: number, posPostulaciones: number){
+      this.ofertas[businessId-1].postulaciones[posPostulaciones].postulantes.push(this.usuario);
+
+      this.businessService.updateBusiness(businessId, this.ofertas[businessId-1]).subscribe(response=>{
+        console.error('Empresa eliminada correctamente');
+      }, error => {
+        console.error('Error al eliminar la empresa', error);
+      });;
   }
 
   matchesFilter(name_a: string,name_u: string,name_s: number,name_e: string) {

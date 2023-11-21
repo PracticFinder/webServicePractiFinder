@@ -12,7 +12,7 @@
 </div>
 
 <div style="font-family: 'Poppins', sans-serif; padding-top: 60px" *ngFor="let oferta of ofertas">
-  <ng-container *ngFor="let data of oferta.postulaciones">
+  <ng-container *ngFor="let data of oferta.postulaciones; let i = index">
     <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,oferta.Empresa)" class="cards-bordes">
       <div class="Job">
         {{data.Titulo}}
@@ -54,7 +54,7 @@
         </div>
         <div style="margin: auto">
           <button *ngIf="!(data.More)" mat-button class="More" (click)="onMore(data)">Ver más detalles</button>
-          <button *ngIf="(data.More)" mat-button class="Postular">Postular a la chambita</button>
+          <button *ngIf="(data.More)" mat-button class="Postular" (click)="addedToPostulantes(oferta.id,i)">Postular</button>
         </div>
         <div class="Arrange" style="text-align: center;">
           <a>{{oferta.Empresa}}</a><br>
