@@ -1,22 +1,25 @@
-<ng-container class="container">
+
+<div style="font-family: 'Poppins', sans-serif;">
   <h1 class="title">{{title}}</h1>
-  <mat-grid-list cols="4">
-    <mat-grid-tile *ngFor="let postulacion of postulaciones" [colspan]="postulacion.cols" [rowspan]="postulacion.rows">
-      <mat-card class="card">
-        <mat-card-header>
-          <mat-card-title>
-            <div class="avatar-title-row">
-              <div class="image-card">
-                <img mat-card-avatar class="avatar-postulacion" src="{{postulacion.image}}" alt="{{postulacion.title}}" >
-              </div>
-              <h3 class="title-postulacion">{{postulacion.title}}</h3>
-            </div>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p class="date-postulacion">{{postulacion.date}}</p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</ng-container>
+  <ng-container *ngFor="let data of postulaciones;">
+
+    <mat-card class="cards-bordes">
+      <div class="Content">
+        <div >
+          <img [src]="data.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
+        </div>
+        <div style="margin: auto;">
+          <a>Descripcion de la chamba</a><br>
+          <a>{{data.Descripcion}}</a>
+        </div>
+        <div class="DateEnd">
+          <a>Desde: </a><br>
+          <a>{{data.Fecha_inicio}}</a><br>
+          <a>hasta</a><br>
+          <a>{{data.Fecha_fin}}</a>
+        </div>
+      </div>
+
+    </mat-card>
+  </ng-container>
+</div>

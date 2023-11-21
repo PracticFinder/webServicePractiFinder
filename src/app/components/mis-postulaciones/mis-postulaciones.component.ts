@@ -1,4 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {BusinessService} from "../../services/business.service";
+import {UserService} from "../../services/user.service";
 
 export interface Postulacion {
   id: any;
@@ -15,76 +17,91 @@ export interface Postulacion {
   styleUrls: ['./mis-postulaciones.component.css']
 })
 
-export class MisPostulacionesComponent {
+export class MisPostulacionesComponent implements OnInit{
   title = 'Mis Postulaciones';
   postulaciones = [] as any;
   postulacionData!: Postulacion;
 
-  constructor() {
+  usuario:any;
+  business:any;
+
+  constructor(private businessService:BusinessService, private userService: UserService) {
     this.postulacionData = {} as Postulacion;
   }
 
   ngOnInit(): void {
-    this.getAllPostulaciones();
+    this.getAllBusiness();
   }
 
   getAllPostulaciones() {
-    const postulacion1: Postulacion = {
-      id: 1,
-      title: 'Postulación 1',
-      date: new Date(),
-      image: 'https://marketplace.canva.com/EAFAELFfY8o/1/0/1600w/canva-azul-y-violeta-informal-corporativo-desarrollo-de-aplicaci%C3%B3n-emprendimiento-empresa-logo-Olgzs4zIQXk.jpg',
-      cols: 4,
-      rows: 1,
 
-    };
+    this.getAddedPostulaciones();
 
-    const postulacion2: Postulacion = {
-      id: 2,
-      title: 'Postulación 2',
-      date: new Date(),
-      image: 'https://www.seoptimer.com/es/blog/wp-content/uploads/2016/04/GOOGLELOGO_1.jpg',
-      cols: 4,
-      rows: 1
-    };
+    // for (var Business of this.business) {
+    //   for (var postulacion of Business.postulaciones) {
+    //     for (var postulante of postulacion.postulantes) {
+    //       if(5 == 5){
+    //         const miPostulacion = {
+    //           Empresa: Business.Empresa,
+    //           UrlImage: Business.UrlImage,
+    //           Descripcion: postulacion.Descripcion,
+    //           Fecha_inicio: postulacion.Fecha_inicio,
+    //           Fecha_fin: postulacion.Fecha_fin,
+    //           id: 7,
+    //           title: 'Postulación 7',
+    //           date: new Date(),
+    //           image: 'https://www.ejemplos.co/wp-content/uploads/2015/11/Logo-Adidas.jpg',
+    //           cols: 4,
+    //           rows: 1,
+    //         };
+    //
+    //         this.postulaciones.push(miPostulacion);
+    //       }
+    //     }
+    //   }
+    // }
 
-    const postulacion3: Postulacion = {
-      id: 3,
-      title: 'Postulación 3',
-      date: new Date(),
-      image: 'https://eserrano.com/wp-content/images/global-marketing-logo.png',
-      cols: 4,
-      rows: 1
-    };
-
-    const postulacion4: Postulacion = {
-      id: 4,
-      title: 'Postulación 4',
-      date: new Date(),
-      image: 'https://www.seoptimer.com/es/blog/wp-content/uploads/2016/04/Coca-Cola3.jpg',
-      cols: 4,
-      rows: 1
-    };
-
-    const postulacion5: Postulacion = {
-      id: 5,
-      title: 'Postulación 5',
-      date: new Date(),
-      image: 'https://www.seoptimer.com/es/blog/wp-content/uploads/2016/04/Logotipos-de-empresas-Buen-Logo.jpg',
-      cols: 4,
-      rows: 1
-    };
-
-    const postulacion6: Postulacion = {
-      id: 6,
-      title: 'Postulación 6',
-      date: new Date(),
-      image: 'https://www.ejemplos.co/wp-content/uploads/2015/11/Logo-Adidas.jpg',
-      cols: 4,
-      rows: 1
-    };
-
-    this.postulaciones.push(postulacion1, postulacion2, postulacion3, postulacion4, postulacion5, postulacion6);
   }
 
+  getAllBusiness(){
+    this.businessService.getBusiness().subscribe((data: any) => {
+      this.business = data;
+      this.getUser();
+    });
+  }
+  getUser(){
+    this.userService.getUsuario().subscribe((data: any) => {
+      this.usuario = data;
+      this.getAllPostulaciones();
+    });
+
+  }
+
+  getAddedPostulaciones(){
+
+     for (var Business of this.business) {
+       for (var postulacion of Business.postulaciones) {
+         for (var postulante of postulacion.postulantes) {
+           if(this.usuario.nombre == postulante.nombre && this.usuario.correo == postulante.correo){
+             const miPostulacion = {
+               Empresa: Business.Empresa,
+               UrlImage: Business.UrlImage,
+               Descripcion: postulacion.Descripcion,
+               Fecha_inicio: postulacion.Fecha_inicio,
+               Fecha_fin: postulacion.Fecha_fin,
+               id: 7,
+               title: 'Postulación 7',
+               date: new Date(),
+               image: 'https://www.ejemplos.co/wp-content/uploads/2015/11/Logo-Adidas.jpg',
+               cols: 4,
+               rows: 1,
+             };
+
+             this.postulaciones.push(miPostulacion);
+           }
+         }
+       }
+     }
+
+  }
 }

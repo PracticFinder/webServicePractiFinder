@@ -70,14 +70,14 @@
       "postulaciones": [
         {
           "id": 1,
-          "Titulo": "Jefe de sistemas",
+          "Titulo": "Jefe de sistema",
           "Descripcion": "En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento. En la empresa se necesitan practicantees en el área de tecnología, deberá pasar por una serie de pruebas como ser entrevistado, rendir controles y medirse en una prueba de conocimiento.",
-          "Fecha_inicio": "20-09-2023",
-          "Fecha_fin": "30-09-2023",
+          "Fecha_inicio": " 20 de noviembre del 2023",
+          "Fecha_fin": " 30 de noviembre del 2023",
           "Requisitos": "1. Tener habilidades en Figma\n2. Conociminetos básticos en Excel\n3. Disposición de horario flexible",
           "Funciones": "1. Comandar un equipo pequeño\n2. Brindar apoyo en el área de tecnología\n3. Organizar tareas del equipo1. Comandar un equipo pequeño",
           "Beneficios": "1. Salario: 1500 soles\n2. Seguro de Salud",
-          "More": false,
+          "More": true,
           "Area": "Educacion",
           "Ubicacion": "La Molina",
           "Salario": 1500,
@@ -329,10 +329,73 @@
                 }
               ],
               "correo": "jesusespinoza@gmail.com"
+            },
+            {
+              "nombre": "Jesus Espinoza",
+              "imagen": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+              "edad": "23",
+              "telefono": "+51 921 123 123",
+              "direccion": "Urb. Santa `M",
+              "habilidades": {
+                "tecnicas": [
+                  "C++",
+                  "Python",
+                  "Office",
+                  "Angular",
+                  "SpringBoot"
+                ],
+                "interpersonales": [
+                  "Compañerismo",
+                  "Liderazgo",
+                  "Trabajo en Equipo"
+                ]
+              },
+              "certificaciones": [
+                {
+                  "nombre": "Mat 1",
+                  "nombreInstitucion": "Mat 1",
+                  "fechaObtencion": "10/20/2023"
+                },
+                {
+                  "nombre": "asd",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": "el 1 de noviembre del 2023"
+                },
+                {
+                  "nombre": "sad",
+                  "nombreInstitucion": "asd",
+                  "fechaObtencion": " 1 de noviembre del 2023"
+                }
+              ],
+              "experiencias": [
+                {
+                  "empresa": "Google",
+                  "cargo": "Ingeniero de Software",
+                  "fechaInicio": " 9 de marzo del 2017",
+                  "fechaFinalizacion": " 4 de noviembre del 2021",
+                  "descripcion": "Trabaje como Ingeniero de Software"
+                }
+              ],
+              "idiomas": [
+                {
+                  "nivel": "Avanzado",
+                  "idioma": "Ingles"
+                },
+                {
+                  "nivel": "Nativo",
+                  "idioma": "Español"
+                },
+                {
+                  "nivel": "Intermedio",
+                  "idioma": "Italiano"
+                }
+              ],
+              "correo": "jesusespinoza@gmail.com"
             }
           ]
         }
-      ]
+      ],
+      "More": false
     },
     {
       "id": 2,
