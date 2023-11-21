@@ -1,12 +1,13 @@
 export interface UserData  {
-  username: string;
+  id: number;
   name: string;
-  lastname: string;
-  email: string;
+  mail: string;
+  username: string;
   password: string;
-  rolId: number;
+  rolID: string;
 }
 export interface Credentials  {
   username: string;
   password: string;
 }
+

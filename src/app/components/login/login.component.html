@@ -3,22 +3,15 @@
     <mat-card-content>Login</mat-card-content>
     <mat-form-field>
       <mat-label>Correo</mat-label>
-      <input matInput [(ngModel)]="credenciales.username" >
+      <input matInput [(ngModel)]="credenciales.username">
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Contraseña</mat-label>
-      <input matInput [(ngModel)]="credenciales.password">
+      <input matInput [(ngModel)]="credenciales.password" type="password">
     </mat-form-field>
-
     <a routerLink="/app-remember-password">Recuperar contraseña</a>
-
-    <button (click)="cambiarVisibilidadToolbar(false); login()" mat-flat-button color="primary" class="boton"> Ingresar </button>
-    <button (click)="cambiarVisibilidadToolbar(false); irHomeReclutador()" mat-flat-button color="primary" class="boton"> Ingresar Reclutador </button>
+    <button (click)="login()" mat-flat-button color="primary" class="boton"> Ingresar </button>
     <button mat-flat-button color="primary" class="boton" (click)="showSignup()">Registrarse</button>
   </div>
-
 </mat-card>
-
-
-

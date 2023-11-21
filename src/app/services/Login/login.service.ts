@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import {BaseService} from "../base.service";
+
 import {HttpClient, HttpResponse} from "@angular/common/http";
 import {map, pipe} from "rxjs";
+import {BaseService} from "../base.service";
+import {UserData} from "../../Interfaces/Login";
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +16,8 @@ export class LoginService extends BaseService {
 
   async getUsers() {
     try {
-      const response = await this.get('/auth/Usuario/Listar');
+
+      const response = await this.http.get('/auth/Usuario/Listar');
       console.log('Lista de usuarios:', response);
       return response;
     } catch (error) {
@@ -25,7 +28,7 @@ export class LoginService extends BaseService {
 
   async createUser(userData: any) {
     try {
-      const response = await this.post('users', userData);
+      const response = await this.http.post('users', userData);
       console.log('Usuario creado:', response);
       return response;
     } catch (error) {
@@ -36,7 +39,7 @@ export class LoginService extends BaseService {
 
   async deleteUser(userId: number) {
     try {
-      const response = await this.delete(`users/${userId}`);
+      const response = await this.http.delete(`users/${userId}`);
       console.log(`Usuario eliminado:`, response);
     } catch (error) {
       console.error('Error al eliminar el usuario:', error);
@@ -45,7 +48,7 @@ export class LoginService extends BaseService {
 
 
   login (creds: any){
-    return this.http.post('https://practifinder-403908.uc.r.appspot.com/api/auth/login', creds, { observe: 'response' })
+    return this.http.post(`${this.baseUrl}/auth/login`, creds, { observe: 'response' })
         .pipe(
             map((res: any) => {
               const body = res.body;
@@ -60,6 +63,11 @@ export class LoginService extends BaseService {
               return body;
             })
         );
+  }
+
+
+  private getUser(token: string){
+    return JSON.parse(atob(token.split('.')[1])) as UserData;
   }
 
   getToken(){

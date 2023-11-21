@@ -15,9 +15,11 @@ export class ProfileComponent {
   }
 
   ngOnInit(): void {
-    this.userService.getUsuario().subscribe((data: any) => {
-      this.usuario = data;
-    });
+    const usuarioGuardado = localStorage.getItem('usuario');
+    if (usuarioGuardado) {
+      this.usuario = JSON.parse(usuarioGuardado);
+      console.log('Usuario guardado:', this.usuario);
+    }
   }
 
   updateUsuario(updatedInfo: any): void {

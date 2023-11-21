@@ -1,0 +1,178 @@
+
+.filtrado {
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #FEB543;
+  color: white;
+  padding-left: 10px;
+}
+
+.card-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+  margin: 100px; /* Margen exterior */
+}
+
+.card-item {
+  background-color: #FEB543;
+  width: calc(25% - 50px); /* Ancho del 25% para mostrar 4 tarjetas por fila, teniendo en cuenta el margen */
+  margin-bottom: 30px; /* Espaciado entre las tarjetas */
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.mat-icon.middle {
+  color: yellow; /* Cambia el color según tus preferencias */
+}
+
+.mat-icon.aproved {
+  color: green; /* Cambia el color según tus preferencias */
+}
+.mat-icon.failed {
+  color: red; /* Cambia el color según tus preferencias */
+}
+
+.button-container {
+  display: flex; /* Usa flexbox para organizar los botones */
+  gap: 30px; /* Define el espacio entre los botones */
+  color: white;
+}
+
+.filtros-button {
+  display: flex;
+  align-items: center;
+  background-color: #FEB543;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.cards-bordes {
+  color: white;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border-radius: 10px;
+  border: 5px solid #FEB543;
+}
+
+.Job{
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 1%;
+  margin-left: 1.2%;
+  margin-bottom: 2%;
+}
+
+.Content{
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Add{
+  color: white; width: 200%; height: auto;  font-size: 60px;
+}
+
+.DateEnd{
+  text-align: center;
+  font-size: 36px
+}
+
+.More{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  border: 2px solid #FEB543;
+  border-radius: 20px;
+}
+
+.Postular{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: #864DDF;
+  border-radius: 20px;
+}
+
+.More-information{
+  flex: 6;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.Blocks{
+  width: 93%;
+  height: 100%;
+  text-align: left;
+  font-size: 18px;
+  margin: auto;
+  color: white;
+  background-color: #342C2C;
+  border-radius: 20px;
+  padding: 20px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+  .filtrado {
+    font-size: 20px; /* Ajusta el tamaño de fuente en relación con el ancho de la ventana gráfica */
+  }
+  .filtros-button{
+    font-size: 12px;
+  }
+  .Job{
+    font-size: 20px;
+  }
+  .Content{
+    font-size: 14px;
+  }
+  .More{
+    font-size: 14px;
+  }
+  .Postular{
+    font-size: 14px;
+  }
+  .Arrange{
+    font-size: 14px;
+  }
+  .DateEnd{
+    font-size: 20px;
+  }
+  .Blocks{
+    font-size: 14px;
+  }
+}
+
+.contenedor {
+  background-color: black;
+  margin: auto;
+  padding-top: 30px;
+  width: 80%;
+
+  border: 5px solid white;
+}

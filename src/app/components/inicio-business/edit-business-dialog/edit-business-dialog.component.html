@@ -1,0 +1,86 @@
+<h1 mat-dialog-title>Actualizar Oferta laboral}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="newForm">
+    <mat-form-field>
+      <input matInput placeholder="{{ titulo }}" formControlName="Titulo">
+      <mat-error *ngIf="newForm.controls['Titulo'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ description }}" formControlName="Descripcion">
+      <mat-error *ngIf="newForm.controls['Descripcion'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="{{ fechainicio }}" formControlName="Fecha_inicio">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="newForm.controls['Fecha_inicio'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="{{ fechafin }}" formControlName="Fecha_fin">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+      <mat-error *ngIf="newForm.controls['Fecha_fin'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ requisitos }}" formControlName="Requisitos">
+      <mat-error *ngIf="newForm.controls['Requisitos'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ funciones }}" formControlName="Funciones">
+      <mat-error *ngIf="newForm.controls['Funciones'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ beneficios }}" formControlName="Beneficios">
+      <mat-error *ngIf="newForm.controls['Beneficios'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ urlimage }}" formControlName="UrlImage">
+      <mat-error *ngIf="newForm.controls['UrlImage'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ eempresa }}" formControlName="Empresa">
+      <mat-error *ngIf="newForm.controls['Empresa'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ area }}" formControlName="Area">
+      <mat-error *ngIf="newForm.controls['Area'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ ubicacion }}" formControlName="Ubicacion">
+      <mat-error *ngIf="newForm.controls['Ubicacion'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="{{ salario }}" formControlName="Salario">
+      <mat-error *ngIf="newForm.controls['Salario'].hasError('required')">
+        Campo requerido
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button [disabled]="!newForm.valid" (click)="onSave()">Aceptar</button>
+</div>
+

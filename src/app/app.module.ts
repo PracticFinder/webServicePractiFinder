@@ -11,8 +11,6 @@ import {MatIconModule} from "@angular/material/icon";
 import { InicioComponent } from './components/inicio/inicio.component';
 import { MisPostulacionesComponent } from './components/mis-postulaciones/mis-postulaciones.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
-import { NotificacionesComponent } from './components/notificaciones/notificaciones.component';
-import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import {RouterOutlet} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
@@ -42,6 +40,21 @@ import { ExperienceDialogComponent } from './components/Profile/Sections/Experie
 import { LanguagesInfoComponent } from './components/Profile/Sections/LanguagesSection/languages-info/languages-info.component';
 import { LanguageDialogComponent } from './components/Profile/Sections/LanguagesSection/language-dialog/language-dialog.component';
 import {MatSelectModule} from "@angular/material/select";
+import { MisPostulantesComponent } from './components/mis-postulantes/mis-postulantes.component';
+import {InicioBusinessComponent} from "./components/inicio-business/inicio-business.component";
+import {UserService} from "./services/user.service";
+import {BusinessService} from "./services/business.service";
+import { CreateDialogComponent } from './components/inicio-business/create-dialog/create-dialog.component';
+import { EditBusinessDialogComponent } from './components/inicio-business/edit-business-dialog/edit-business-dialog.component';
+import { StepOneComponent } from './components/mis-postulantes/step-one/step-one.component';
+import { ViewPostulanteComponent } from './components/mis-postulantes/view-postulante/view-postulante.component';
+import { ProfilePostulanteComponent } from './components/mis-postulantes/view-postulante/profile-postulante/profile-postulante.component';
+import { TablePostulanteContentComponent } from './components/mis-postulantes/view-postulante/table-postulante-content/table-postulante-content.component';
+import { CertificationPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/certification-postulante/certification-postulante.component';
+import { ExperiencePostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/experience-postulante/experience-postulante.component';
+import { LanguagePostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/language-postulante/language-postulante.component';
+import { PersonalInfoPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/personal-info-postulante/personal-info-postulante.component';
+import { SkillPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/skill-postulante/skill-postulante.component';
 import {LoginService} from "./services/Login/login.service";
 import {BaseService} from "./services/base.service";
 
@@ -51,8 +64,6 @@ import {BaseService} from "./services/base.service";
     InicioComponent,
     MisPostulacionesComponent,
     SoporteComponent,
-    NotificacionesComponent,
-    ChatBoxComponent,
     ProfileComponent,
     TableProfileContentComponent,
     LoginComponent,
@@ -68,6 +79,19 @@ import {BaseService} from "./services/base.service";
     ExperienceDialogComponent,
     LanguagesInfoComponent,
     LanguageDialogComponent,
+    InicioBusinessComponent,
+    MisPostulantesComponent,
+    CreateDialogComponent,
+    EditBusinessDialogComponent,
+    StepOneComponent,
+    ViewPostulanteComponent,
+    ProfilePostulanteComponent,
+    TablePostulanteContentComponent,
+    CertificationPostulanteComponent,
+    ExperiencePostulanteComponent,
+    LanguagePostulanteComponent,
+    PersonalInfoPostulanteComponent,
+    SkillPostulanteComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -92,7 +116,7 @@ import {BaseService} from "./services/base.service";
     MatSelectModule
 
   ],
-  providers: [ToolbarService, LocalToolbarServiceService],
+  providers: [ToolbarService, LocalToolbarServiceService, UserService, BusinessService, LoginService, BaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
