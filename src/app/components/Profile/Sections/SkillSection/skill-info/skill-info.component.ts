@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {AddSkillDialogComponent} from "../add-skill-dialog/add-skill-dialog.component";
-import {UserService} from "../../../../../services/user.service";
+import {UserService} from "../../../../../services/User/user.service";
 import {MatDialog} from "@angular/material/dialog";
 
 @Component({
@@ -13,8 +13,10 @@ export class SkillInfoComponent {
    usuario: any;
    @Output() actualizarUsuarioEvent = new EventEmitter<any>();
   constructor(public dialog: MatDialog) {
+
   }
   updateUserInfo(updatedInfo: any) {
+    localStorage.setItem('usuario', JSON.stringify(this.usuario));
     this.actualizarUsuarioEvent.emit(updatedInfo);
   }
   openAddSkillDialog(type: string): void {
@@ -26,9 +28,9 @@ export class SkillInfoComponent {
     dialogRef.afterClosed().subscribe((result: string) => {
       if (result) {
         if (type === 'tecnica') {
-          this.usuario.habilidades.tecnicas.push(result); // Agrega la habilidad al array 'tecnicas'
+          this.usuario.habilidadesTecnicas.push(result); // Agrega la habilidad al array 'tecnicas'
         } else if (type === 'interpersonal') {
-          this.usuario.habilidades.interpersonales.push(result); // Agrega la habilidad al array 'interpersonales'
+          this.usuario.habilidadesInterpersonales.push(result); // Agrega la habilidad al array 'interpersonales'
         }
 
         // Llama a la función para actualizar el usuario con las habilidades actualizadas

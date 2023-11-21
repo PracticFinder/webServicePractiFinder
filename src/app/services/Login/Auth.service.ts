@@ -8,7 +8,7 @@ import {UserData} from "../../Interfaces/Login";
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService extends BaseService {
+export class AuthService extends BaseService {
 
   constructor(private http: HttpClient) {
     super();
@@ -16,7 +16,6 @@ export class LoginService extends BaseService {
 
   async getUsers() {
     try {
-
       const response = await this.http.get('/auth/Usuario/Listar');
       console.log('Lista de usuarios:', response);
       return response;
@@ -26,16 +25,6 @@ export class LoginService extends BaseService {
     }
   }
 
-  async createUser(userData: any) {
-    try {
-      const response = await this.http.post('users', userData);
-      console.log('Usuario creado:', response);
-      return response;
-    } catch (error) {
-      console.error('Error al crear el usuario:', error);
-      throw error;
-    }
-  }
 
   async deleteUser(userId: number) {
     try {
@@ -65,12 +54,14 @@ export class LoginService extends BaseService {
         );
   }
 
-
-  private getUser(token: string){
-    return JSON.parse(atob(token.split('.')[1])) as UserData;
-  }
-
-  getToken(){
-    return localStorage.getItem('token');
+  async register (userData: UserData) {
+    try {
+      const response = await this.http.post(`${this.baseUrl}/auth/Usuario/Registrar`, userData);
+      console.log('Usuario creado:', response);
+      return response;
+    } catch (error) {
+      console.error('Error al crear el usuario:', error);
+      throw error;
+    }
   }
 }

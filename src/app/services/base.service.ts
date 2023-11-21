@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 
 export class BaseService {
-  baseUrl: string = 'https://practifinder-403908.uc.r.appspot.com/api';
+  baseUrl: string = 'http://localhost:8080/api';
 
   constructor() {
   }

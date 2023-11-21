@@ -13,5 +13,8 @@
     <a routerLink="/app-remember-password">Recuperar contraseña</a>
     <button (click)="login()" mat-flat-button color="primary" class="boton"> Ingresar </button>
     <button mat-flat-button color="primary" class="boton" (click)="showSignup()">Registrarse</button>
+    <div *ngIf="loginError" class="error-message">
+      Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.
+    </div>
   </div>
 </mat-card>

@@ -23,7 +23,7 @@ export class ExperienceDialogComponent {
       cargo: ['', Validators.required],
       fechaInicio: [null, Validators.required],
       fechaFinalizacion: [null, Validators.required],
-      descripcion: ['', Validators.required]
+      descripcion: ['', Validators.required],
     });
   }
 

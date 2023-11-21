@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {UserService} from "../../../services/user.service";
+import {UserService} from "../../../services/User/user.service";
 import { MatDialog } from '@angular/material/dialog';
 import {PdfService} from '../../../services/Pdf/pdf.service';
 
@@ -35,7 +35,10 @@ export class TableProfileContentComponent {
 
 
   actualizarUsuario(updatedInfo: any): void {
-    this.usuarioService.updateUsuario(updatedInfo).subscribe((data: any) => {
+    console.log('no soy profile:', updatedInfo);
+    localStorage.setItem('usuario', JSON.stringify(updatedInfo));
+    this.usuarioService.updateUser(updatedInfo).subscribe((data: any) => {
+      this.usuario = data; // Actualiza la información del usuario con la respuesta del servidor
     });
   }
 

@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {UserService} from "../../../../services/user.service";
+import {UserService} from "../../../../services/User/user.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -40,10 +40,6 @@ export class TablePostulanteContentComponent {
     });
   }
 
-  actualizarUsuario(updatedInfo: any): void {
-    this.usuarioService.updateUsuario(updatedInfo).subscribe((data: any) => {
-    });
-  }
 
   showInformation(section: string) {
     this.showInfo = {

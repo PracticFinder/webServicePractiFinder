@@ -4,7 +4,7 @@
       <div>
         <p class="text-lg font-semibold">Habilidades Técnicas:</p>
         <div class="card-container">
-          <div class="card" *ngFor="let habilidad of usuario.habilidades.tecnicas; let i = index">
+          <div class="card" *ngFor="let habilidad of usuario.habilidadesTecnicas; let i = index">
             <p>{{ habilidad }}</p>
             <button (click)="eliminarHabilidad('tecnica', i)">
               <mat-icon>delete</mat-icon>
@@ -19,7 +19,7 @@
       <div>
         <p class="text-lg font-semibold">Habilidades Interpersonales:</p>
         <div class="card-container">
-          <div class="card" *ngFor="let habilidad of usuario.habilidades.interpersonales; let i = index">
+          <div class="card" *ngFor="let habilidad of usuario.habilidadesInterpersonales; let i = index">
             <p>{{ habilidad }}</p>
             <button (click)="eliminarHabilidad('interpersonal', i)">
               <mat-icon>delete</mat-icon>

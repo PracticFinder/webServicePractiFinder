@@ -1,10 +1,9 @@
 export interface UserData  {
-  id: number;
   name: string;
-  mail: string;
+  email: string;
   username: string;
   password: string;
-  rolID: string;
+  rolId: number;
 }
 export interface Credentials  {
   username: string;

@@ -37,10 +37,14 @@ export class PdfService {
     doc.setFontSize(24);
     doc.text('Currículum Vitae', 105, 15, { align: 'center' });
 
-    // Imagen de perfil
-    const img = new Image();
-    img.src = usuario.imagen;
-    doc.addImage(img, 'PNG', 20, 25, 40, 40);
+    if (usuario.imagen === null) {
+      doc.text('No hay imagen', 25, 9);
+    }else {
+      const img = new Image();
+      img.src = usuario.imagen;
+      doc.addImage(img, 'PNG', 20, 25, 40, 40);
+    }
+
 
     // Datos personales
     doc.setFont('helvetica');
@@ -52,21 +56,24 @@ export class PdfService {
     doc.text(`Correo: ${usuario.correo}`, 70, 70);
     let yPos = 90; // Posición inicial de Habilidades Técnicas
 
-// Habilidades Técnicas
-    doc.setFillColor(200, 200, 200);
-    doc.setFont('bold');
-    doc.rect(20, yPos, 170, 10, 'F');
-    doc.setTextColor(0, 0, 0);
-    yPos= yPos + 6;
-    doc.text('Habilidades Técnicas', 25,  yPos); // Ajusta la posición vertical del texto
-    doc.setFont('normal');
-    usuario.habilidades.tecnicas.forEach((habilidad: string, index: number) => {
-      yPos= yPos + 8;
-      doc.text(`- ${habilidad}`, 25, yPos);// Ajusta la posición vertical del texto
-    });
-
+    if (usuario.habilidadesTecnicas && usuario.habilidadesTecnicas.length > 0) {
+      doc.setFillColor(200, 200, 200);
+      doc.setFont('bold');
+      doc.rect(20, yPos, 170, 10, 'F');
+      doc.setTextColor(0, 0, 0);
+      yPos = yPos + 6;
+      doc.text('Habilidades Técnicas', 25, yPos); // Ajusta la posición vertical del texto
+      doc.setFont('normal');
+      usuario.habilidadesTecnicas.forEach((habilidad: string, index: number) => {
+        yPos = yPos + 8;
+        doc.text(`- ${habilidad}`, 25, yPos);// Ajusta la posición vertical del texto
+      });
+    }else {
+        doc.text('No se han especificado habilidades técnicas', 25, yPos);
+      }
 // Certificaciones
-    yPos += 10; // Incrementa la posición vertical para la siguiente sección
+    if (usuario.certificaciones.length > 0) {
+      yPos += 10; // Incrementa la posición vertical para la siguiente sección
     doc.setFillColor(200, 200, 200);
     doc.setFont('bold');
     doc.rect(20, yPos, 170, 10, 'F');
@@ -77,9 +84,13 @@ export class PdfService {
     usuario.certificaciones.forEach((certificacion: any, index: number) => {
       yPos= yPos + 8;
       doc.text(`- ${certificacion.nombre} en ${certificacion.nombreInstitucion} (${certificacion.fechaObtencion})`, 25, yPos); // Ajusta la posición vertical del texto
-    });
+    });}else {
+        doc.text('No se han especificado certificaciones', 25, yPos);
+      }
+
 
 // Experiencia Laboral
+    if (usuario.experiencias.length > 0) {
     yPos += 10; // Incrementa la posición vertical para la siguiente sección
     doc.setFillColor(200, 200, 200);
     doc.setFont('bold');
@@ -97,8 +108,12 @@ export class PdfService {
     doc.text(`Fechas: ${experiencia.fechaInicio} - ${experiencia.fechaFinalizacion}`, 25, yPos);
     yPos= yPos + 6;
     doc.text(`Descripción: ${experiencia.descripcion}`, 25, yPos);
+    }else {
+        doc.text('No se han especificado experiencias laborales', 25, yPos);
+    }
 
 // Idiomas
+    if (  usuario.idiomas.length > 0) {
     yPos += 10; // Incrementa la posición vertical para la siguiente sección
     doc.setFillColor(200, 200, 200);
     doc.setFont('bold');
@@ -111,6 +126,10 @@ export class PdfService {
       yPos= yPos + 3;
       doc.text(`- ${idioma.idioma}: ${idioma.nivel}`, 25, yPos + 15 + (index * 7)); // Ajusta la posición vertical del texto
     });
+    }else {
+        doc.text('No se han especificado idiomas', 25, yPos);
+    }
+
 
 // Guardar o descargar el PDF
     doc.save('mi_cv.pdf');

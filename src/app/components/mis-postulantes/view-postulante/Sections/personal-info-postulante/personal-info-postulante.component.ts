@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {UserService} from "../../../../../services/user.service";
+import {UserService} from "../../../../../services/User/user.service";
 
 @Component({
   selector: 'app-personal-info-postulante',
@@ -12,8 +12,5 @@ export class PersonalInfoPostulanteComponent {
   constructor(private usuarioService: UserService) {
   }
 
-  actualizarUsuario(updatedInfo: any): void {
-    this.usuarioService.updateUsuario(updatedInfo).subscribe((data: any) => {
-    });
-  }
+
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import {UserData} from "../../Interfaces/Login";
+import {AuthService} from "../../services/Login/Auth.service";
 
 @Component({
   selector: 'app-sign-up',
@@ -9,29 +10,46 @@ import {UserData} from "../../Interfaces/Login";
 })
 export class SignUpComponent {
   user: UserData = {
-    id: 0,
-    name: '',
-    mail: '',
-    username: '',
-    password: '',
-    rolID: '',
+    username: "carlos123",
+    name: "Carlos",
+    email: "example2@gmail.com",
+    password: "carlos123",
+    rolId: 2,
   };
 
   repeatPassword: string = '';
+  registrationSuccess: boolean = false;
+  passwordMismatch: boolean = false;
+  noPermissionMessage: boolean = false;
 
-  saveUserData() {
+  constructor(private router: Router, private authService: AuthService) {}
+
+  async saveUserData() {
     if (this.user.password !== this.repeatPassword) {
-      // Lógica para manejar contraseñas que no coinciden
-      console.log('Las contraseñas no coinciden');
+      this.passwordMismatch = true;
+      this.registrationSuccess = false;
       return;
     }
+    this.user.rolId = +this.user.rolId; // Esto convertirá 'rolId' a un número
+      console.log('Usuario:', this.user);
 
-    // Lógica para guardar los datos de usuario (puedes enviarlos a un servicio o hacer otra acción)
-    console.log('Datos del usuario:', this.user);
+    try {
+      const response =(await this.authService.register(this.user)).toPromise(); // Espera la resolución de la función register
+        if (response === null) {
+          this.noPermissionMessage = true;
+          return;
+        }
+        this.registrationSuccess = true;
+        this.passwordMismatch = false;
+        console.log('Usuario creado con éxito:', this.user);
+    } catch (error: any) {
+        this.registrationSuccess = false;
+        this.passwordMismatch = false;
+        this.registrationSuccess =false ;
+    }
   }
 
   showLogin() {
     this.router.navigate(['/app-login']);
   }
-  constructor(private router: Router) {}
 }

@@ -22,7 +22,7 @@ export class ExperienceInfoComponent {
 
     dialogRef.afterClosed().subscribe((result: any) => {
       if (result) {
-        this.usuario.experiencias.push(result);
+        this.usuario.experiencias.push( result);
       }
     });
   }
