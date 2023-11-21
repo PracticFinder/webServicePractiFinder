@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 })
 export class TablePostulanteContentComponent {
   @Input() usuario: any;
-
+  @Input() ofertas:any;
 
   showInfo: {
     personal: boolean,
@@ -33,7 +33,11 @@ export class TablePostulanteContentComponent {
   }
 
   retroceder(): void{
-    this.router.navigate(['/step-one']);
+    this.router.navigate(['/step-one'], {
+      state: {
+        ofertaData: this.ofertas
+      }
+    });
   }
 
   actualizarUsuario(updatedInfo: any): void {

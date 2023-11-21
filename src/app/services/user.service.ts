@@ -19,4 +19,5 @@ export class UserService {
   updateUsuario(updatedInfo: any): Observable<any> {
     return this.http.put<any>(this.usuarioUrl, updatedInfo);
   }
+
 }

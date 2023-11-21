@@ -11,15 +11,15 @@
   <button class="filtros-button" mat-button (click)="onEMPRESA()">EMPRESA</button>
 </div>
 
-<div style="font-family: 'Poppins', sans-serif; padding-top: 60px" >
-  <ng-container *ngFor="let data of ofertas">
-    <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,data.Empresa)" class="cards-bordes">
+<div style="font-family: 'Poppins', sans-serif; padding-top: 60px" *ngFor="let oferta of ofertas">
+  <ng-container *ngFor="let data of oferta.postulaciones">
+    <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,oferta.Empresa)" class="cards-bordes">
       <div class="Job">
         {{data.Titulo}}
       </div>
       <div class="Content">
         <div >
-          <img [src]="data.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
+          <img [src]="oferta.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
         </div>
         <div style="margin: auto;">
           <a>Descripcion de la chamba</a><br>
@@ -57,7 +57,7 @@
           <button *ngIf="(data.More)" mat-button class="Postular">Postular a la chambita</button>
         </div>
         <div class="Arrange" style="text-align: center;">
-          <a>{{data.Empresa}}</a><br>
+          <a>{{oferta.Empresa}}</a><br>
         </div>
       </div>
 
