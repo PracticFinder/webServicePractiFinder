@@ -1,7 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {UserService} from "../../../services/user.service";
 import { MatDialog } from '@angular/material/dialog';
-import {AddSkillDialogComponent} from "../Sections/SkillSection/add-skill-dialog/add-skill-dialog.component";
 import {PdfService} from '../../../services/Pdf/pdf.service';
 
 @Component({

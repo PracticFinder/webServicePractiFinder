@@ -13,7 +13,7 @@
 
 <div style="font-family: 'Poppins', sans-serif; padding-top: 60px;" >
   <div class="contenedor">
-    <ng-container *ngFor="let data of ofertas">
+    <ng-container *ngFor="let data   of ofertas">
       <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,data.Empresa)" class="cards-bordes">
         <div class="Content" (click)="abrirDetalleOferta(data)">
           <div >

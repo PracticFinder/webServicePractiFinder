@@ -17,18 +17,18 @@ export class AppComponent implements OnInit{
     {path:'/inicio',title:'INICIO'},
     {path:'/mis-postulaciones',title:'MIS POSTULACIONES'},
     {path:'/soporte',title:'SOPORTE'},
+    {path:'/login',title:'CERRAR SESION'}
   ];
 
   optionsEmployer =[
     {path:'/inicio-business',title:'INICIO'},
     {path:'/mis-postulantes',title:'MIS POSTULANTES'},
     {path:'/soporte',title:'SOPORTE'},
+    {path:'/login',title:'CERRAR SESION'}
   ];
 
   boottons =[
-    {path:'/notificaciones',title:'notifications'},
-    {path:'/messages',title:'comment'},
-    {path:'/perfil',title:'person'},
+    {path:'/perfil',title:'person'}
   ]
 
   constructor(private toolbarService: ToolbarService, private localservice: LocalToolbarServiceService) {
