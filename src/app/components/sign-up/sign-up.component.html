@@ -8,7 +8,7 @@
 
     <mat-form-field>
       <mat-label>Correo</mat-label>
-      <input matInput [(ngModel)]="user.mail">
+      <input matInput [(ngModel)]="user.email">
     </mat-form-field>
 
     <mat-form-field>
@@ -28,12 +28,31 @@
 
     <mat-form-field>
       <mat-label>Rol (practicante o empresa)</mat-label>
-      <mat-select [(ngModel)]="user.rolID">
+      <mat-select [(ngModel)]="user.rolId">
         <mat-option value="1">Practicante</mat-option>
         <mat-option value="2">Empresa</mat-option>
       </mat-select>
     </mat-form-field>
 
-    <button mat-flat-button color="primary" class="boton" (click)="saveUserData()">Guardar</button>
+    <button mat-flat-button color="primary" class="boton" (click)="saveUserData()">Registrarse</button>
+    <div class="flex justify-center" *ngIf="passwordMismatch">
+      Las contraseñas no coinciden. Por favor, inténtalo de nuevo.
+    </div>
+
+    <div *ngIf="noPermissionMessage" class="no-permission-message">
+      El usuario ya existe.
+    </div>
+
+    <!-- Mensaje de éxito cuando se crea el usuario -->
+    <div class="pt-2"  *ngIf="registrationSuccess">
+      <h1 class="flex justify-center">¡Usuario creado con éxito!</h1>
+
+    </div>
+    <div class="pt-2 flex justify-center">
+      <button mat-flat-button color="primary" class="boton" (click)="showLogin()">Ir a Login</button>
+    </div>
+
+
   </div>
+
 </mat-card>

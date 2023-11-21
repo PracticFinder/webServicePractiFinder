@@ -5,11 +5,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { Router } from '@angular/router';
 import {ToolbarService} from "../../services/toolbar.service";
 
-import {LoginService} from "../../services/Login/login.service";
+import {AuthService} from "../../services/Login/Auth.service";
 import {Credentials, UserData} from "../../Interfaces/Login";
 import {LocalToolbarServiceService} from "../../services/local-toolbar-service.service";
 import {jwtDecode} from "jwt-decode";
-import {UserService} from "../../services/user.service";
+import {UserService} from "../../services/User/user.service";
 
 
 
@@ -22,8 +22,10 @@ export class LoginComponent {
   showSignup() {
     this.router.navigate(['/app-sing-up']);
   }
-  constructor(private router: Router, private toolbarService: ToolbarService,
-              private loginService:  LoginService, private localService: LocalToolbarServiceService,
+    loginError: boolean = false;
+
+    constructor(private router: Router, private toolbarService: ToolbarService,
+              private loginService:  AuthService, private localService: LocalToolbarServiceService,
               private userService: UserService) {}
 
   credenciales: Credentials = {
@@ -52,47 +54,54 @@ export class LoginComponent {
     this.router.navigate(['/inicio-business']);
   }
 
-  login() {
-    console.log("credenciales", this.credenciales);
-    this.loginService.login(this.credenciales)
-      .subscribe(
-        (res: any) => {
-          console.log(res);
-          const token = res.token; // Asumiendo que el token se encuentra en una propiedad 'token' en la respuesta
-          const decodedToken = jwtDecode(token);
-          console.log('Decoded token:', decodedToken);
-          const userId = decodedToken.sub; // Ejemplo: si el token contiene un campo 'email'
-          console.log('Decoded token:', userId);
+    login() {
+        console.log("credenciales", this.credenciales);
+        this.loginService.login(this.credenciales).subscribe(
+            (res: any) => {
+                console.log(res);
+                const token = res.token;
+                localStorage.setItem('token', token);
+                const decodedToken = jwtDecode(token);
+                const userId = decodedToken.sub;
+                console.log('Decoded id:', userId);
 
-          const user= {
-           idRoles: 1
-          };
+                if (userId) {
+                    let userRole: number; // Declara userRole aquí
 
-            let datosUsuario: any = {};
+                    // Obtener el rol del usuario
+                    this.userService.getUserByUsername(userId)
+                        .then((res: number) => {
+                            userRole = res;
+                            console.log('User role:', res);
 
-            this.userService.getUsuario().subscribe((data: any) => {
-                datosUsuario = data;
+                            // Obtener el usuario
+                            return this.userService.getUser(userId);
+                        })
+                        .then((res) => {
+                            localStorage.setItem('usuario', JSON.stringify(res));
+                            console.log('User:', res);
 
-                const usuarioGuardado =  JSON.stringify(datosUsuario);
-                localStorage.setItem('usuario', usuarioGuardado);
-                console.log("usuario guardado", usuarioGuardado);
-            });
-
-            console.log("daa", datosUsuario);
-          if (user.idRoles == 1) {
-            this.router.navigate(['/inicio']);
-            this.cambiarVisibilidadToolbar(false, false);
-          } else if (user.idRoles == 2) {
-            this.router.navigate(['/inicio-business']);
-            this.cambiarVisibilidadToolbar(false, true);
-          }
-        },
-
-        (error: any) => {
-          console.error('Error en el inicio de sesión:', error);
-        }
-      );
-
-  }
+                            // Verificar userRole y redirigir
+                            if (userRole === 1) {
+                                this.router.navigate(['/inicio']);
+                                this.cambiarVisibilidadToolbar(false, false);
+                            } else if (userRole === 2) {
+                                this.router.navigate(['/inicio-business']);
+                                this.cambiarVisibilidadToolbar(false, true);
+                            }
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
+                } else {
+                    console.error('User ID is undefined');
+                }
+            },
+            (error: any) => {
+                console.error('Error en el inicio de sesión:', error);
+                this.loginError = true;
+            }
+        );
+    }
 
 }

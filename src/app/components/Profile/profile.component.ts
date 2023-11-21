@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {UserService} from "../../services/user.service";
+import {UserService} from "../../services/User/user.service";
+import {UserData} from "../../Interfaces/Login";
 
 @Component({
   selector: 'app-profile',
@@ -23,7 +24,8 @@ export class ProfileComponent {
   }
 
   updateUsuario(updatedInfo: any): void {
-    this.userService.updateUsuario(updatedInfo).subscribe((data: any) => {
+    localStorage.setItem('usuario', JSON.stringify(updatedInfo));
+    this.userService.updateUser( updatedInfo ).subscribe((data: any) => {
       this.usuario = data; // Actualiza la información del usuario con la respuesta del servidor
     });
   }

@@ -42,7 +42,7 @@ import { LanguageDialogComponent } from './components/Profile/Sections/Languages
 import {MatSelectModule} from "@angular/material/select";
 import { MisPostulantesComponent } from './components/mis-postulantes/mis-postulantes.component';
 import {InicioBusinessComponent} from "./components/inicio-business/inicio-business.component";
-import {UserService} from "./services/user.service";
+import {UserService} from "./services/User/user.service";
 import {BusinessService} from "./services/business.service";
 import { CreateDialogComponent } from './components/inicio-business/create-dialog/create-dialog.component';
 import { EditBusinessDialogComponent } from './components/inicio-business/edit-business-dialog/edit-business-dialog.component';
@@ -55,7 +55,7 @@ import { ExperiencePostulanteComponent } from './components/mis-postulantes/view
 import { LanguagePostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/language-postulante/language-postulante.component';
 import { PersonalInfoPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/personal-info-postulante/personal-info-postulante.component';
 import { SkillPostulanteComponent } from './components/mis-postulantes/view-postulante/Sections/skill-postulante/skill-postulante.component';
-import {LoginService} from "./services/Login/login.service";
+import {AuthService} from "./services/Login/Auth.service";
 import {BaseService} from "./services/base.service";
 
 @NgModule({
@@ -116,7 +116,7 @@ import {BaseService} from "./services/base.service";
     MatSelectModule
 
   ],
-  providers: [ToolbarService, LocalToolbarServiceService, UserService, BusinessService, LoginService, BaseService],
+  providers: [ToolbarService, LocalToolbarServiceService, UserService, BusinessService, AuthService, BaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {UserService} from "../../../../../services/user.service";
+import {UserService} from "../../../../../services/User/user.service";
 import {MatDialog} from "@angular/material/dialog";
 import {
   EditCertificacionDialogComponent
@@ -14,9 +14,11 @@ export class CertificationInfoComponent {
   @Input()
   usuario: any;
   @Output() actualizarUsuarioEvent = new EventEmitter<any>();
+
   updateUserInfo(updatedInfo: any) {
     this.actualizarUsuarioEvent.emit(updatedInfo);
   }
+
   constructor(private usuarioService: UserService, public dialog: MatDialog) {
   }
 

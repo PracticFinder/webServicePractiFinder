@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {LanguageDialogComponent} from "../language-dialog/language-dialog.component";
+import {UserService} from "../../../../../services/User/user.service";
 
 @Component({
   selector: 'app-languages-info',
@@ -11,7 +12,7 @@ export class LanguagesInfoComponent {
   @Input()
   usuario: any;
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, private usuarioService: UserService) {}
 
   openLanguageDialog(): void {
     const dialogRef = this.dialog.open(LanguageDialogComponent, {
@@ -21,6 +22,7 @@ export class LanguagesInfoComponent {
     dialogRef.afterClosed().subscribe((result: any) => {
       if (result) {
         this.usuario.idiomas.push(result);
+        localStorage.setItem('usuario', JSON.stringify(this.usuario));
       }
     });
   }

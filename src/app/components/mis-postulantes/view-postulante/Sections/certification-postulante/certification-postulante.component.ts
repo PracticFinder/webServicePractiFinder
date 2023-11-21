@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {UserService} from "../../../../../services/user.service";
+import {UserService} from "../../../../../services/User/user.service";
 import {MatDialog} from "@angular/material/dialog";
 import {
   EditCertificacionDialogComponent
