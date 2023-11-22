@@ -70,7 +70,7 @@ export class MisPostulacionesComponent implements OnInit{
     });
   }
   getUser(){
-    
+
       this.usuario = localStorage.getItem('usuario');
 
   }

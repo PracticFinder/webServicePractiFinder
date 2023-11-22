@@ -12,52 +12,52 @@
 </div>
 
 <div style="font-family: 'Poppins', sans-serif; padding-top: 60px" *ngFor="let oferta of ofertas">
-  <ng-container *ngFor="let data of oferta.postulaciones; let i = index">
-    <mat-card *ngIf="matchesFilter(data.Area,data.Ubicacion,data.Salario,oferta.Empresa)" class="cards-bordes">
+  <ng-container *ngFor="let data of oferta.ofertas; let i = index">
+    <mat-card *ngIf="matchesFilter(data.area,data.ubicacion,data.salario,oferta.empresa)" class="cards-bordes">
       <div class="Job">
-        {{data.Titulo}}
+        {{data.titulo}}
       </div>
       <div class="Content">
         <div >
-          <img [src]="oferta.UrlImage" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
+          <img [src]="oferta.imagen" alt="" style="width: 80%; height: auto; margin-left: 3.8%;"/>
         </div>
         <div style="margin: auto;">
           <a>Descripcion de la chamba</a><br>
-          <a>{{data.Descripcion}}</a>
+          <a>{{data.descripcion}}</a>
         </div>
         <div class="DateEnd">
           <a>Desde: </a><br>
-          <a>{{data.Fecha_inicio}}</a><br>
+          <a>{{data.fechaInicio}}</a><br>
           <a>hasta</a><br>
-          <a>{{data.Fecha_fin}}</a>
+          <a>{{data.fechaFin}}</a>
         </div>
       </div>
 
-      <div *ngIf="(data.More)" class="More-information">
+      <div *ngIf="(data.more)" class="More-information">
         <div class="Blocks">
           <a>Requisitos</a><br>
-          <a>{{data.Requisitos}}</a>
+          <a>{{data.requisitos}}</a>
         </div>
         <div class="Blocks">
           <a>Funciones</a><br>
-          <a>{{data.Funciones}}</a>
+          <a>{{data.funciones}}</a>
         </div>
         <div class="Blocks">
           <a>Beneficios</a><br>
-          <a>{{data.Beneficios}}</a>
+          <a>{{data.beneficios}}</a>
         </div>
       </div>
 
       <div class="Content">
         <div class="Arrange" style="margin-left: 3.5%">
-          <a>{{data.Ubicacion}}</a>
+          <a>{{data.ubicacion}}</a>
         </div>
         <div style="margin: auto">
-          <button *ngIf="!(data.More)" mat-button class="More" (click)="onMore(data)">Ver más detalles</button>
-          <button *ngIf="(data.More)" mat-button class="Postular" (click)="addedToPostulantes(oferta.id,i)">Postular</button>
+          <button *ngIf="!(data.more)" mat-button class="More" (click)="onMore(data)">Ver más detalles</button>
+          <button *ngIf="(data.more)" mat-button class="Postular" (click)="addedToPostulantes(oferta.id,i)">Postular</button>
         </div>
         <div class="Arrange" style="text-align: center;">
-          <a>{{oferta.Empresa}}</a><br>
+          <a>{{oferta.nombre}}</a><br>
         </div>
       </div>
 
