@@ -34,7 +34,7 @@ export class UserService extends BaseService{
     }
   }
 
-  updateUser(updatedUserData: UserData): Observable<any> {
+  updateUser(updatedUserData: any ): Observable<any> {
     console.log('Actualizando usuario:', updatedUserData);
     const token = localStorage.getItem('token'); // Obtener el token del localStorage
 
@@ -42,7 +42,7 @@ export class UserService extends BaseService{
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}` // Agregar el token a la cabecera de autorización
     });
-    return this.http.put<any>(`${this.baseUrl}/auth/students`, updatedUserData, {headers}  );
+    return this.http.put<any>(`${this.baseUrl}/auth/students/${updatedUserData.id}/createWithMissingAttributes`, updatedUserData, {headers}  );
   }
 
 }
