@@ -6,7 +6,7 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class BusinessService {
-  private businessUrl = 'http://localhost:3000/empresas';
+  private businessUrl = 'https://practifinder-403908.uc.r.appspot.com/api/auth/business';
 
   constructor(private http: HttpClient) {}
   getBusiness(): Observable<any> {

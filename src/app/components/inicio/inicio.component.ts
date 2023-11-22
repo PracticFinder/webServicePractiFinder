@@ -26,7 +26,8 @@ export class InicioComponent {
 
   ngOnInit(){
     this.businessService.getBusiness().subscribe((data: any) => {
-      this.ofertas = data;
+      this.ofertas = data.content;
+      console.log(this.ofertas);
     });
 
       this.usuario = localStorage.getItem('usuario');
