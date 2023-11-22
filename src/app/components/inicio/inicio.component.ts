@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {BusinessService} from "../../services/business.service";
-import {UserService} from "../../services/user.service";
+import {UserService} from "../../services/User/user.service";
 
 @Component({
   selector: 'app-inicio',
@@ -28,9 +28,8 @@ export class InicioComponent {
     this.businessService.getBusiness().subscribe((data: any) => {
       this.ofertas = data;
     });
-    this.userService.getUsuario().subscribe((data: any) => {
-      this.usuario = data;
-    });
+
+      this.usuario = localStorage.getItem('usuario');
   }
 
   // necesito el BusinessId, posicion de Postulaciones
