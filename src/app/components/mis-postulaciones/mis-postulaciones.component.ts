@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {BusinessService} from "../../services/business.service";
-import {UserService} from "../../services/user.service";
+import {UserService} from "../../services/User/user.service";
 
 export interface Postulacion {
   id: any;
@@ -70,10 +70,8 @@ export class MisPostulacionesComponent implements OnInit{
     });
   }
   getUser(){
-    this.userService.getUsuario().subscribe((data: any) => {
-      this.usuario = data;
-      this.getAllPostulaciones();
-    });
+    
+      this.usuario = localStorage.getItem('usuario');
 
   }
 
